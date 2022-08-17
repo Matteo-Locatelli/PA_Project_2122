@@ -1,4 +1,4 @@
-!SESSION 2022-08-16 17:19:46.551 -----------------------------------------------
+!SESSION 2022-08-17 15:04:42.123 -----------------------------------------------
 eclipse.buildId=4.19.0.I20210303-1800
 java.version=15.0.2
 java.vendor=Oracle Corporation
@@ -6,7 +6,7 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.core.runtime 4 0 2022-08-16 17:20:03.287
+!ENTRY org.eclipse.core.runtime 4 0 2022-08-17 15:04:57.986
 !MESSAGE Invalid input url:platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png
 !STACK 0
 java.io.IOException: Unable to resolve plug-in "org.eclipse.epp.mpc.ui".
@@ -130,7 +130,7 @@ java.io.IOException: Unable to resolve plug-in "org.eclipse.epp.mpc.ui".
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 
-!ENTRY org.eclipse.core.runtime 4 0 2022-08-16 17:20:03.301
+!ENTRY org.eclipse.core.runtime 4 0 2022-08-17 15:04:57.989
 !MESSAGE Invalid input url:platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png
 !STACK 0
 java.io.IOException: Unable to resolve plug-in "org.eclipse.epp.mpc.ui".
@@ -258,5 +258,8 @@ java.io.IOException: Unable to resolve plug-in "org.eclipse.epp.mpc.ui".
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 
-!ENTRY org.eclipse.cdt.core 1 0 2022-08-16 17:20:42.853
-!MESSAGE Indexed 'PA_Project_2122' (1 sources, 120 headers) in 3,99 sec: 11.978 declarations; 19.622 references; 0 unresolved inclusions; 0 syntax errors; 4 unresolved names (0,013%)
+!ENTRY org.eclipse.cdt.core 1 0 2022-08-17 15:05:20.500
+!MESSAGE Indexed 'PA_Project_2122' (1 sources, 0 headers) in 0,059 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-08-17 16:05:01.262
+!MESSAGE Indexed 'PA_Project_21_22' (1 sources, 0 headers) in 0,003 sec: 1 declarations; 0 references; 1 unresolved inclusions; 0 syntax errors; 3 unresolved names (75%)

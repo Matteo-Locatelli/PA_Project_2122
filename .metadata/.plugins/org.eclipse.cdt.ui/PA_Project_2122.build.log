@@ -1,0 +1,8 @@
+16:06:53 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_2122.exe "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\main.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_2122.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+16:06:53 Build Failed. 1 errors, 0 warnings. (took 164ms)
+

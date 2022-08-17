@@ -1,0 +1,154 @@
+15:09:32 **** Rebuild of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Gestore\\Gestore.o" "..\\src\\Gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utente\\Studente.o" "..\\src\\Utente\\Studente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menu\\Menu.o" "..\\src\\Menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menu\\MenuCompleto.o" "..\\src\\Menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menu\\MenuSecondo.o" "..\\src\\Menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utente\\Utente.o" "..\\src\\Utente\\Utente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_2122.o" "..\\src\\PA_Project_2122.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Gestore\\Stampe.o" "..\\src\\Gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utente\\Professore.o" "..\\src\\Utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Menu\\MenuPrimo.o" "..\\src\\Menu\\MenuPrimo.cpp" 
+g++ -o PA_Project_2122.exe "src\\Gestore\\Gestore.o" "src\\Gestore\\Stampe.o" "src\\Menu\\Menu.o" "src\\Menu\\MenuCompleto.o" "src\\Menu\\MenuPrimo.o" "src\\Menu\\MenuSecondo.o" "src\\PA_Project_2122.o" "src\\Utente\\Professore.o" "src\\Utente\\Studente.o" "src\\Utente\\Utente.o" 
+Info: Nothing to build for PA_Project_2122
+15:12:39 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_2122.o" "..\\src\\PA_Project_2122.cpp" 
+g++ -o PA_Project_2122.exe "src\\Gestore\\Gestore.o" "src\\Gestore\\Stampe.o" "src\\Menu\\Menu.o" "src\\Menu\\MenuCompleto.o" "src\\Menu\\MenuPrimo.o" "src\\Menu\\MenuSecondo.o" "src\\PA_Project_2122.o" "src\\Utente\\Professore.o" "src\\Utente\\Studente.o" "src\\Utente\\Utente.o" 
+15:13:20 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_2122.o" "..\\src\\PA_Project_2122.cpp" 
+g++ -o PA_Project_2122.exe "src\\Gestore\\Gestore.o" "src\\Gestore\\Stampe.o" "src\\Menu\\Menu.o" "src\\Menu\\MenuCompleto.o" "src\\Menu\\MenuPrimo.o" "src\\Menu\\MenuSecondo.o" "src\\PA_Project_2122.o" "src\\Utente\\Professore.o" "src\\Utente\\Studente.o" "src\\Utente\\Utente.o" 
+15:13:33 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_2122.o" "..\\src\\PA_Project_2122.cpp" 
+g++ -o PA_Project_2122.exe "src\\Gestore\\Gestore.o" "src\\Gestore\\Stampe.o" "src\\Menu\\Menu.o" "src\\Menu\\MenuCompleto.o" "src\\Menu\\MenuPrimo.o" "src\\Menu\\MenuSecondo.o" "src\\PA_Project_2122.o" "src\\Utente\\Professore.o" "src\\Utente\\Studente.o" "src\\Utente\\Utente.o" 
+15:55:10 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Gestore\\Stampe.o" "..\\src\\Gestore\\Stampe.cpp" 
+In file included from ..\src\Gestore\Stampe.cpp:13:0:
+..\src\Gestore\Stampe.h:14:23: fatal error: Menu/Menu.h: No such file or directory
+ #include <Menu/Menu.h>
+                       ^
+compilation terminated.
+15:55:24 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Gestore\\Stampe.o" "..\\src\\Gestore\\Stampe.cpp" 
+In file included from ..\src\Gestore\Stampe.cpp:13:0:
+..\src\Gestore\Stampe.h:14:23: fatal error: Menu/Menu.h: No such file or directory
+ #include <Menu/Menu.h>
+                       ^
+compilation terminated.
+15:56:29 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Gestore\\Stampe.o" "..\\src\\Gestore\\Stampe.cpp" 
+In file included from ..\src\Gestore\Stampe.cpp:13:0:
+..\src\Gestore\Stampe.h:14:23: fatal error: Menu/Menu.h: No such file or directory
+ #include <Menu/Menu.h>
+                       ^
+compilation terminated.
+15:57:46 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Gestore\\Stampe.o" "..\\src\\Gestore\\Stampe.cpp" 
+In file included from ..\src\Gestore\Stampe.cpp:13:0:
+..\src\Gestore\Stampe.h:14:23: fatal error: Menu/Menu.h: No such file or directory
+ #include <Menu/Menu.h>
+                       ^
+compilation terminated.
+15:58:01 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Gestore\\Stampe.o" "..\\src\\Gestore\\Stampe.cpp" 
+In file included from ..\src\Gestore\Stampe.cpp:13:0:
+..\src\Gestore\Stampe.h:14:23: fatal error: Menu/Menu.h: No such file or directory
+ #include <Menu/Menu.h>
+                       ^
+compilation terminated.
+15:58:11 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_2122.o" "..\\src\\PA_Project_2122.cpp" 
+..\src\PA_Project_2122.cpp:14:29: fatal error: Gestore/Gestore.h: No such file or directory
+ #include <Gestore/Gestore.h>
+                             ^
+compilation terminated.
+15:59:20 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.cpp:8:0:
+..\src\gestore\Stampe.h:14:33: fatal error: c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\"..\menu\menuprimo.h": Invalid argument
+ #include <"../Menu/MenuPrimo.h">
+                                 ^
+compilation terminated.
+15:59:55 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_2122.o" "..\\src\\PA_Project_2122.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Utente.o" "..\\src\\utente\\Utente.cpp" 
+g++ -o PA_Project_2122.exe "src\\PA_Project_2122.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_2122.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:00:33 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_2122.exe "src\\PA_Project_2122.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_2122.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:00:35 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_2122.exe "src\\PA_Project_2122.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_2122.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:03:41 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o PA_Project_2122.exe "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\main.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_2122.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:03:50 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_2122.exe "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\main.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_2122.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:05:47 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_2122.exe "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\main.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_2122.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:05:48 **** Rebuild of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Utente.o" "..\\src\\utente\\Utente.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+src\gestore\Gestore.o: In function `ZN7GestoreC2Ev':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/gestore/Gestore.cpp:23: undefined reference to `Gestore::init()'
+collect2.exe: error: ld returned 1 exit status
+16:06:53 **** Incremental Build of configuration Debug for project PA_Project_2122 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_2122.exe "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\main.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_2122.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:06:53 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22
+Info: Nothing to build for PA_Project_21_22
+16:09:30 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22
