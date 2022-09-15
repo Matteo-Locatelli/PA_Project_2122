@@ -1,0 +1,29 @@
+/*
+ * Menu.cpp
+ *
+ *  Created on: 17 ago 2022
+ *      Author: matte
+ */
+
+#include <iostream>
+#include <cstdlib>
+#include <string>
+#include <ctime>
+#include <memory>
+#include <vector>
+#include <list>
+#include <map>
+
+#include "Menu.h"
+
+using namespace std;
+
+enum Orario : int {
+	pranzo = 0, cena = 1
+};
+
+Menu::mapInit(map<Orario, string> mapOra){
+
+}
+
+

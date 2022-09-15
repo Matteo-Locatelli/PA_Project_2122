@@ -1,0 +1,50 @@
+/*
+ * Menu.cpp
+ *
+ *  Created on: 17 ago 2022
+ *      Author: matte
+ */
+
+#include <iostream>
+#include <cstdlib>
+#include <string>
+#include <ctime>
+#include <memory>
+#include <vector>
+#include <list>
+#include <map>
+
+#include "Menu.h"
+
+using namespace std;
+
+Menu::Menu(utente_ref u, int prezzo, time_t data, Orario o){
+	this->u = u;
+	this->prezzo = prezzo;
+	this->data = data;
+	this->o = o;
+}
+
+Menu(const Menu &menu){
+	this->u = menu.u;
+	this->prezzo = menu.prezzo;
+	this->data = menu.data;
+	this->o = menu.o;
+}
+
+time_t Menu::get_data(){}
+
+void Menu::set_data(time_t const data){}
+
+Orario Menu::get_ora(){}
+
+void Menu::set_ora(Orario){
+
+}
+
+string Menu::get_string(){}
+
+
+Menu::~Menu(){}
+
+

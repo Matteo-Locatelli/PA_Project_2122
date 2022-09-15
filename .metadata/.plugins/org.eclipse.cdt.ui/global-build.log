@@ -152,3 +152,318 @@ Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
 g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
 Info: Nothing to build for PA_Project_21_22
+Info: Nothing to build for PA_Project_21_22
+Info: Nothing to build for PA_Project_21_22
+18:20:56 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Utente.o" "..\\src\\utente\\Utente.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+18:23:54 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+18:30:04 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22
+18:31:21 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+21:25:47 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+..\src\utente\Studente.cpp: In destructor 'virtual Studente::~Studente()':
+..\src\utente\Studente.cpp:39:56: error: 'std::__cxx11::string Utente::nome' is private within this context
+  cout << "Elimino studente " + codice_studente + " " + nome + " " + cognome + "\n";
+                                                        ^~~~
+In file included from ..\src\utente\Studente.h:20:0,
+                 from ..\src\utente\Studente.cpp:17:
+..\src\utente\Utente.h:31:9: note: declared private here
+  string nome;
+         ^~~~
+..\src\utente\Studente.cpp:39:69: error: 'std::__cxx11::string Utente::cognome' is private within this context
+  cout << "Elimino studente " + codice_studente + " " + nome + " " + cognome + "\n";
+                                                                     ^~~~~~~
+In file included from ..\src\utente\Studente.h:20:0,
+                 from ..\src\utente\Studente.cpp:17:
+..\src\utente\Utente.h:33:9: note: declared private here
+  string cognome;
+         ^~~~~~~
+21:26:13 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+21:30:07 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Utente.o" "..\\src\\utente\\Utente.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+21:31:46 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Utente.o" "..\\src\\utente\\Utente.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+21:34:44 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Utente.o" "..\\src\\utente\\Utente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+22:12:30 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+src\gestore\Gestore.o:Gestore.cpp:(.bss+0x0): multiple definition of `MyMap[abi:cxx11]'
+src\PA_Project_21_22.o:PA_Project_21_22.cpp:(.bss+0x0): first defined here
+src\gestore\Stampe.o:Stampe.cpp:(.bss+0x0): multiple definition of `MyMap[abi:cxx11]'
+src\PA_Project_21_22.o:C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:19: first defined here
+collect2.exe: error: ld returned 1 exit status
+22:13:02 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+src\gestore\Gestore.o:Gestore.cpp:(.bss+0x0): multiple definition of `MyMap[abi:cxx11]'
+src\PA_Project_21_22.o:PA_Project_21_22.cpp:(.bss+0x0): first defined here
+src\gestore\Stampe.o:Stampe.cpp:(.bss+0x0): multiple definition of `MyMap[abi:cxx11]'
+src\PA_Project_21_22.o:C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:19: first defined here
+collect2.exe: error: ld returned 1 exit status
+22:14:01 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+src\gestore\Gestore.o:Gestore.cpp:(.bss+0x0): multiple definition of `mapOra[abi:cxx11]'
+src\PA_Project_21_22.o:PA_Project_21_22.cpp:(.bss+0x0): first defined here
+src\gestore\Stampe.o:Stampe.cpp:(.bss+0x0): multiple definition of `mapOra[abi:cxx11]'
+src\PA_Project_21_22.o:C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:19: first defined here
+collect2.exe: error: ld returned 1 exit status
+22:19:12 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+22:32:09 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp:21:6: error: multiple definition of 'enum Orario'
+ enum Orario : int {
+      ^~~~~~
+In file included from ..\src\menu\Menu.cpp:17:0:
+..\src\menu\Menu.h:22:6: note: previous definition here
+ enum Orario : int {};
+      ^~~~~~
+..\src\menu\Menu.cpp:25:1: error: prototype for 'int Menu::mapInit(std::map<Orario, std::__cxx11::basic_string<char> >)' does not match any in class 'Menu'
+ Menu::mapInit(map<Orario, string> mapOra){
+ ^~~~
+In file included from ..\src\menu\Menu.cpp:17:0:
+..\src\menu\Menu.h:50:14: error: candidate is: static void Menu::mapInit(std::map<Orario, std::__cxx11::basic_string<char> >)
+  static void mapInit(map<Orario, string> mapOra);
+              ^~~~~~~
+22:34:05 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+22:34:31 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:14:0,
+                 from ..\src\gestore\Stampe.cpp:8:
+..\src\gestore\../menu/Menu.h: In static member function 'static void Menu::mapInit(std::map<Orario, std::__cxx11::basic_string<char> >)':
+..\src\gestore\../menu/Menu.h:53:20: warning: left operand of comma operator has no effect [-Wunused-value]
+   (Orario::pranzo, "Pranzo");
+                    ^~~~~~~~
+..\src\gestore\../menu/Menu.h:54:18: warning: left operand of comma operator has no effect [-Wunused-value]
+   (Orario::cena, "Cena");
+                  ^~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+In file included from ..\src\menu\Menu.cpp:17:0:
+..\src\menu\Menu.h: In static member function 'static void Menu::mapInit(std::map<Orario, std::__cxx11::basic_string<char> >)':
+..\src\menu\Menu.h:53:20: warning: left operand of comma operator has no effect [-Wunused-value]
+   (Orario::pranzo, "Pranzo");
+                    ^~~~~~~~
+..\src\menu\Menu.h:54:18: warning: left operand of comma operator has no effect [-Wunused-value]
+   (Orario::cena, "Cena");
+                  ^~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+In file included from ..\src\gestore/Gestore.h:14:0,
+                 from ..\src\PA_Project_21_22.cpp:15:
+..\src\gestore/../menu/Menu.h: In static member function 'static void Menu::mapInit(std::map<Orario, std::__cxx11::basic_string<char> >)':
+..\src\gestore/../menu/Menu.h:53:20: warning: left operand of comma operator has no effect [-Wunused-value]
+   (Orario::pranzo, "Pranzo");
+                    ^~~~~~~~
+..\src\gestore/../menu/Menu.h:54:18: warning: left operand of comma operator has no effect [-Wunused-value]
+   (Orario::cena, "Cena");
+                  ^~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:14:0,
+                 from ..\src\gestore\Gestore.cpp:8:
+..\src\gestore\../menu/Menu.h: In static member function 'static void Menu::mapInit(std::map<Orario, std::__cxx11::basic_string<char> >)':
+..\src\gestore\../menu/Menu.h:53:20: warning: left operand of comma operator has no effect [-Wunused-value]
+   (Orario::pranzo, "Pranzo");
+                    ^~~~~~~~
+..\src\gestore\../menu/Menu.h:54:18: warning: left operand of comma operator has no effect [-Wunused-value]
+   (Orario::cena, "Cena");
+                  ^~~~~~
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+22:46:08 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+In file included from ..\src\gestore/Gestore.h:14:0,
+                 from ..\src\PA_Project_21_22.cpp:15:
+..\src\gestore/../menu/Menu.h:19:20: fatal error: Utente.h: No such file or directory
+ #include "Utente.h"
+                    ^
+compilation terminated.
+22:46:39 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+In file included from ..\src\gestore/Gestore.h:14:0,
+                 from ..\src\PA_Project_21_22.cpp:15:
+..\src\gestore/../menu/Menu.h:19:20: fatal error: Utente.h: No such file or directory
+ #include "Utente.h"
+                    ^
+compilation terminated.
+22:46:49 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+In file included from ..\src\gestore/Gestore.h:14:0,
+                 from ..\src\PA_Project_21_22.cpp:15:
+..\src\gestore/../menu/Menu.h:19:20: fatal error: Utente.h: No such file or directory
+ #include "Utente.h"
+                    ^
+compilation terminated.
+22:47:21 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:14:0,
+                 from ..\src\gestore\Gestore.cpp:8:
+..\src\gestore\../menu/Menu.h:19:27: fatal error: utente\Utente.h: No such file or directory
+ #include "utente\Utente.h"
+                           ^
+compilation terminated.
+22:47:44 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+In file included from ..\src\gestore/Gestore.h:14:0,
+                 from ..\src\PA_Project_21_22.cpp:15:
+..\src\gestore/../menu/Menu.h:19:27: fatal error: utente/Utente.h: No such file or directory
+ #include "utente/Utente.h"
+                           ^
+compilation terminated.
+22:47:58 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:14:0,
+                 from ..\src\gestore\Gestore.cpp:8:
+..\src\gestore\../menu/Menu.h:42:2: error: default argument missing for parameter 3 of 'Menu::Menu(utente_ref, int, time_t, Orario)'
+  Menu(utente_ref u, int prezzo=0 , time_t data, Orario o);
+  ^~~~
+..\src\gestore\../menu/Menu.h:42:2: error: default argument missing for parameter 4 of 'Menu::Menu(utente_ref, int, time_t, Orario)'
+22:49:00 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp: In member function 'virtual time_t Menu::get_data()':
+..\src\menu\Menu.cpp:35:25: warning: no return statement in function returning non-void [-Wreturn-type]
+ time_t Menu::get_data(){}
+                         ^
+..\src\menu\Menu.cpp: In member function 'virtual Orario Menu::get_ora()':
+..\src\menu\Menu.cpp:39:24: warning: no return statement in function returning non-void [-Wreturn-type]
+ Orario Menu::get_ora(){}
+                        ^
+..\src\menu\Menu.cpp: In member function 'virtual std::__cxx11::string Menu::get_string()':
+..\src\menu\Menu.cpp:45:27: warning: no return statement in function returning non-void [-Wreturn-type]
+ string Menu::get_string(){}
+                           ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+22:51:20 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp: In member function 'virtual std::__cxx11::string Menu::get_ora()':
+..\src\menu\Menu.cpp:49:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+..\src\menu\Menu.cpp: In member function 'virtual std::__cxx11::string Menu::get_string()':
+..\src\menu\Menu.cpp:55:27: warning: no return statement in function returning non-void [-Wreturn-type]
+ string Menu::get_string(){}
+                           ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+22:58:39 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Utente.o" "..\\src\\utente\\Utente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp: In member function 'virtual std::__cxx11::string Menu::get_string()':
+..\src\menu\Menu.cpp:57:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+22:59:56 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp: In member function 'virtual std::__cxx11::string Menu::get_string()':
+..\src\menu\Menu.cpp:56:15: error: aggregate 'std::stringstream streamer' has incomplete type and cannot be defined
+  stringstream streamer;
+               ^~~~~~~~
+23:00:20 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp: In member function 'virtual std::__cxx11::string Menu::get_string()':
+..\src\menu\Menu.cpp:56:15: error: aggregate 'std::stringstream streamer' has incomplete type and cannot be defined
+  stringstream streamer;
+               ^~~~~~~~
+..\src\menu\Menu.cpp:60:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+23:00:37 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp: In member function 'virtual std::__cxx11::string Menu::get_string()':
+..\src\menu\Menu.cpp:60:2: error: expected ';' before 'return'
+  return streamer.str();
+  ^~~~~~
+..\src\menu\Menu.cpp:61:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+23:01:11 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp: In member function 'virtual std::__cxx11::string Menu::get_string()':
+..\src\menu\Menu.cpp:60:2: error: expected ';' before 'return'
+  return streamer.str();
+  ^~~~~~
+..\src\menu\Menu.cpp:61:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+23:01:20 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+23:04:03 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+23:05:08 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22
