@@ -467,3 +467,250 @@ Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
 g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
 Info: Nothing to build for PA_Project_21_22
+17:35:03 **** Rebuild of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:14:0,
+                 from ..\src\gestore\Gestore.cpp:8:
+..\src\gestore\../menu/Menu.h: In member function 'std::__cxx11::string Menu::getStringFromEnum(Orario)':
+..\src\gestore\../menu/Menu.h:55:9: error: 'pranzo' is not a member of 'Orario'
+   if(o==Orario::pranzo){
+         ^~~~~~
+..\src\gestore\../menu/Menu.h:57:17: error: 'cena' is not a member of 'Orario'
+   } else if (o==Orario::cena){
+                 ^~~~~~
+17:36:00 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+In file included from ..\src\menu\Menu.cpp:18:0:
+..\src\menu\Menu.h: In member function 'std::__cxx11::string Menu::getStringFromEnum(Orario)':
+..\src\menu\Menu.h:55:9: error: 'pranzo' is not a member of 'Orario'
+   if(o==Orario::pranzo){
+         ^~~~~~
+..\src\menu\Menu.h:57:17: error: 'cena' is not a member of 'Orario'
+   } else if (o==Orario::cena){
+                 ^~~~~~
+..\src\menu\Menu.cpp: At global scope:
+..\src\menu\Menu.cpp:23:15: error: underlying type mismatch in enum 'enum Orario'
+ enum Orario : int {
+               ^~~
+In file included from ..\src\menu\Menu.cpp:18:0:
+..\src\menu\Menu.h:25:6: error: previous definition here
+ enum Orario{};
+      ^~~~~~
+..\src\menu\Menu.h: In member function 'std::__cxx11::string Menu::getStringFromEnum(Orario)':
+..\src\menu\Menu.h:62:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+17:36:16 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:14:0,
+                 from ..\src\gestore\Stampe.cpp:8:
+..\src\gestore\../menu/Menu.h: In member function 'std::__cxx11::string Menu::getStringFromEnum(Orario)':
+..\src\gestore\../menu/Menu.h:55:9: error: 'pranzo' is not a member of 'Orario'
+   if(o==Orario::pranzo){
+         ^~~~~~
+..\src\gestore\../menu/Menu.h:57:17: error: 'cena' is not a member of 'Orario'
+   } else if (o==Orario::cena){
+                 ^~~~~~
+17:37:07 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp:23:6: error: multiple definition of 'enum Orario'
+ enum Orario : int {
+      ^~~~~~
+In file included from ..\src\menu\Menu.cpp:18:0:
+..\src\menu\Menu.h:25:6: note: previous definition here
+ enum Orario : int{};
+      ^~~~~~
+..\src\menu\Menu.cpp: In member function 'std::__cxx11::string Menu::getStringFromEnum(Orario)':
+..\src\menu\Menu.cpp:84:8: error: 'pranzo' is not a member of 'Orario'
+  if(o==Orario::pranzo){
+        ^~~~~~
+..\src\menu\Menu.cpp:86:16: error: 'cena' is not a member of 'Orario'
+  } else if (o==Orario::cena){
+                ^~~~~~
+..\src\menu\Menu.cpp:91:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+17:38:47 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp:23:6: error: multiple definition of 'enum Orario'
+ enum Orario : int {
+      ^~~~~~
+In file included from ..\src\menu\Menu.cpp:18:0:
+..\src\menu\Menu.h:25:6: note: previous definition here
+ enum Orario : int{};
+      ^~~~~~
+17:39:58 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+17:57:15 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp: In function 'utente_ref get_utente()':
+..\src\menu\Menu.cpp:42:9: error: invalid use of 'this' in non-member function
+  return this->u;
+         ^~~~
+..\src\menu\Menu.cpp: In function 'void set_utente(utente_ref)':
+..\src\menu\Menu.cpp:46:2: error: invalid use of 'this' in non-member function
+  this->u = utente;
+  ^~~~
+17:57:57 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+17:59:40 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+18:02:53 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:31:38: error: expected class-name before '{' token
+ class MenuPrimo : public virtual Menu{
+                                      ^
+..\src\menu\MenuPrimo.h:39:52: error: 'Orario' has not been declared
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, int primo, int dessert, int caffe);
+                                                    ^~~~~~
+..\src\menu\MenuPrimo.cpp:25:62: error: 'Orario' has not been declared
+ MenuPrimo::MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, int primo, int dessert, int caffe);
+                                                              ^~~~~~
+..\src\menu\MenuPrimo.cpp:25:105: error: declaration of 'MenuPrimo::MenuPrimo(utente_ref, int, time_t, int, int, int, int)' outside of class is not definition [-fpermissive]
+ MenuPrimo::MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, int primo, int dessert, int caffe);
+                                                                                                         ^
+..\src\menu\MenuPrimo.cpp:27:49: error: declaration of 'MenuPrimo::MenuPrimo(const MenuPrimo&)' outside of class is not definition [-fpermissive]
+ MenuPrimo::MenuPrimo(const MenuPrimo &menu_primo);
+                                                 ^
+18:05:14 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:8:
+..\src\gestore\../menu/MenuPrimo.h:39:58: error: 'Menu::Orario' has not been declared
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Menu::Orario o, int primo, int dessert, int caffe);
+                                                          ^~~~~~
+18:05:45 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:15:0,
+                 from ..\src\gestore\Stampe.cpp:8:
+..\src\gestore\../menu/MenuPrimo.h:39:58: error: 'Menu::Orario' has not been declared
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Menu::Orario o, int primo, int dessert, int caffe);
+                                                          ^~~~~~
+18:06:19 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:31:38: error: expected class-name before '{' token
+ class MenuPrimo : public virtual Menu{
+                                      ^
+..\src\menu\MenuPrimo.h:39:52: error: 'Orario' has not been declared
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, int primo, int dessert, int caffe);
+                                                    ^~~~~~
+..\src\menu\MenuPrimo.cpp:25:62: error: 'Orario' has not been declared
+ MenuPrimo::MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, int primo, int dessert, int caffe):
+                                                              ^~~~~~
+..\src\menu\MenuPrimo.cpp: In constructor 'MenuPrimo::MenuPrimo(utente_ref, int, time_t, int, int, int, int)':
+..\src\menu\MenuPrimo.cpp:26:3: error: class 'MenuPrimo' does not have any field named 'Menu'
+   Menu(u, prezzo, data, o){
+   ^~~~
+18:07:24 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In copy constructor 'MenuPrimo::MenuPrimo(const MenuPrimo&)':
+..\src\menu\MenuPrimo.cpp:32:49: error: no matching function for call to 'Menu::Menu()'
+ MenuPrimo::MenuPrimo(const MenuPrimo &menu_primo){
+                                                 ^
+In file included from ..\src\menu\MenuPrimo.h:23:0,
+                 from ..\src\menu\MenuPrimo.cpp:21:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+18:12:19 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In copy constructor 'MenuPrimo::MenuPrimo(const MenuPrimo&)':
+..\src\menu\MenuPrimo.cpp:44:49: error: no matching function for call to 'Menu::Menu()'
+ MenuPrimo::MenuPrimo(const MenuPrimo &menu_primo){
+                                                 ^
+In file included from ..\src\menu\MenuPrimo.h:23:0,
+                 from ..\src\menu\MenuPrimo.cpp:21:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+18:15:25 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+18:18:59 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+18:20:45 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+In file included from ..\src\menu\MenuSecondo.cpp:21:0:
+..\src\menu\MenuSecondo.h:50:20: error: 'MenuPrimo' was not declared in this scope
+ typedef shared_ptr<MenuPrimo> menu_secondo_ref;
+                    ^~~~~~~~~
+..\src\menu\MenuSecondo.h:50:29: error: template argument 1 is invalid
+ typedef shared_ptr<MenuPrimo> menu_secondo_ref;
+                             ^
+..\src\menu\MenuSecondo.cpp:56:1: error: 'MenuPrimo' does not name a type
+ MenuPrimo::~MenuSecondo(){
+ ^~~~~~~~~
+18:20:54 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+In file included from ..\src\menu\MenuSecondo.cpp:21:0:
+..\src\menu\MenuSecondo.h:50:20: error: 'MenuPrimo' was not declared in this scope
+ typedef shared_ptr<MenuPrimo> menu_secondo_ref;
+                    ^~~~~~~~~
+..\src\menu\MenuSecondo.h:50:29: error: template argument 1 is invalid
+ typedef shared_ptr<MenuPrimo> menu_secondo_ref;
+                             ^
+18:21:06 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22

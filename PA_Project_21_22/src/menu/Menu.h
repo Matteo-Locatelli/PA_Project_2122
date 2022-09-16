@@ -22,9 +22,7 @@
 
 using namespace std;
 
-enum Orario : int {
-	pranzo=0, cena=1
-};
+enum Orario : int;
 
 class Menu {
 
@@ -43,25 +41,21 @@ public:
 
 	Menu(const Menu &menu);
 
+	virtual utente_ref get_utente();
+
+	virtual void set_utente(utente_ref const utente);
+
 	virtual time_t get_data();
 
 	virtual void set_data(time_t const data);
 
 	virtual string get_ora();
 
-	virtual void set_ora(Orario o);
+	virtual void set_ora(Orario const o);
 
 	virtual string get_string();
 
-	string getStringFromEnum(Orario o) {
-		if(o==Orario::pranzo){
-			return "Pranzo";
-		} else if (o==Orario::cena){
-			return "Cena";
-		} else {
-			return "Errore";
-		}
-	}
+	virtual string getStringFromEnum(Orario const o);
 
 	virtual ~Menu();
 };

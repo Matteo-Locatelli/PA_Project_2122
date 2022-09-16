@@ -19,6 +19,11 @@
 
 using namespace std;
 
+
+enum Orario : int {
+	pranzo=0, cena=1
+};
+
 Menu::Menu(utente_ref u, int prezzo, time_t data, Orario o){
 	this->u = u;
 	this->prezzo = prezzo;
@@ -31,6 +36,14 @@ Menu::Menu(const Menu &menu){
 	this->prezzo = menu.prezzo;
 	this->data = menu.data;
 	this->o = menu.o;
+}
+
+utente_ref Menu::get_utente(){
+	return this->u;
+}
+
+void Menu::set_utente(utente_ref const utente){
+	this->u = utente;
 }
 
 time_t Menu::get_data(){
@@ -73,6 +86,16 @@ string Menu::get_string(){
 	streamer << " Orario: " << Menu::getStringFromEnum(this->o) <<endl;
 
 	return streamer.str();
+}
+
+string Menu::getStringFromEnum(Orario o) {
+	if(o==Orario::pranzo){
+		return "Pranzo";
+	} else if (o==Orario::cena){
+		return "Cena";
+	} else {
+		return "Errore";
+	}
 }
 
 Menu::~Menu(){
