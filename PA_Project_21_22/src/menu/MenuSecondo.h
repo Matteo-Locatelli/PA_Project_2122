@@ -26,21 +26,27 @@ using namespace std;
 
 enum Secondo : int;
 
-enum Dessert : int;
+enum Contorno : int;
 
 enum Caffe : int;
 
 class MenuSecondo : public virtual Menu{
 
 private:
-	int secondo;
-	int dessert;
-	int caffe;
+	Secondo secondo;
+	Contorno contorno;
+	Caffe caffe;
 
 public:
-	MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, int primo, int dessert, int caffe);
+	MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
 
-	MenuSecondo(menu_ref menu, int primo, int dessert, int caffe);
+	MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+
+	virtual string get_string_secondo_from_enum(Secondo const c);
+
+	virtual string get_string_contorno_from_enum(Contorno const n);
+
+	virtual string get_string_caffe_from_enum(Caffe const c);
 
 	virtual string get_string();
 

@@ -59,11 +59,21 @@ void Menu::set_data(time_t const data){
 }
 
 string Menu::get_ora(){
-	return getStringFromEnum(this->o);
+	return get_string_orario_from_enum(this->o);
 }
 
-void Menu::set_ora(Orario o){
+void Menu::set_ora(Orario const o){
 	this->o = o;
+}
+
+string Menu::get_string_orario_from_enum(Orario const o) {
+	if(o==Orario::pranzo){
+		return "Pranzo";
+	} else if (o==Orario::cena){
+		return "Cena";
+	} else {
+		return "Errore";
+	}
 }
 
 string Menu::get_string(){
@@ -83,19 +93,9 @@ string Menu::get_string(){
 		streamer << "null ";
 	}
 
-	streamer << " Orario: " << Menu::getStringFromEnum(this->o) <<endl;
+	streamer << " Orario: " << Menu::get_string_orario_from_enum(this->o) <<endl;
 
 	return streamer.str();
-}
-
-string Menu::getStringFromEnum(Orario o) {
-	if(o==Orario::pranzo){
-		return "Pranzo";
-	} else if (o==Orario::cena){
-		return "Cena";
-	} else {
-		return "Errore";
-	}
 }
 
 Menu::~Menu(){

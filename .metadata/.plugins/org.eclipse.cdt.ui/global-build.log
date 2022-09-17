@@ -714,3 +714,496 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\g
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
 g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
 Info: Nothing to build for PA_Project_21_22
+08:56:44 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+08:57:43 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+08:59:13 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+09:07:41 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In function 'std::__cxx11::string get_string_caffe_from_enum(Caffe)':
+..\src\menu\MenuPrimo.cpp:77:5: error: 'o' was not declared in this scope
+  if(o==Orario::pranzo){
+     ^
+..\src\menu\MenuPrimo.cpp:77:8: error: 'pranzo' is not a member of 'Orario'
+  if(o==Orario::pranzo){
+        ^~~~~~
+..\src\menu\MenuPrimo.cpp:79:16: error: 'cena' is not a member of 'Orario'
+  } else if (o==Orario::cena){
+                ^~~~~~
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:89:40: error: 'utente_ref Menu::u' is private within this context
+  streamer << "Menu primo di " << this->u->get_string();
+                                        ^
+In file included from ..\src\menu\MenuPrimo.h:23:0,
+                 from ..\src\menu\MenuPrimo.cpp:21:
+..\src\menu\Menu.h:31:13: note: declared private here
+  utente_ref u;
+             ^
+..\src\menu\MenuPrimo.cpp:96:35: error: 'int Menu::prezzo' is private within this context
+  streamer << " Prezzo: " << this->prezzo <<endl;
+                                   ^~~~~~
+In file included from ..\src\menu\MenuPrimo.h:23:0,
+                 from ..\src\menu\MenuPrimo.cpp:21:
+..\src\menu\Menu.h:33:6: note: declared private here
+  int prezzo;
+      ^~~~~~
+..\src\menu\MenuPrimo.cpp:98:35: error: 'time_t Menu::data' is private within this context
+  tm* local_data_time = localtime(&data);
+                                   ^~~~
+In file included from ..\src\menu\MenuPrimo.h:23:0,
+                 from ..\src\menu\MenuPrimo.cpp:21:
+..\src\menu\Menu.h:35:9: note: declared private here
+  time_t data;
+         ^~~~
+..\src\menu\MenuPrimo.cpp:109:69: error: 'Orario Menu::o' is private within this context
+  streamer << " Orario: " << Menu::get_string_orario_from_enum(this->o) <<endl;
+                                                                     ^
+In file included from ..\src\menu\MenuPrimo.h:23:0,
+                 from ..\src\menu\MenuPrimo.cpp:21:
+..\src\menu\Menu.h:37:9: note: declared private here
+  Orario o;
+         ^
+..\src\menu\MenuPrimo.cpp: In function 'std::__cxx11::string get_string_caffe_from_enum(Caffe)':
+..\src\menu\MenuPrimo.cpp:84:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+09:08:36 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:89:40: error: 'utente_ref Menu::u' is private within this context
+  streamer << "Menu primo di " << this->u->get_string();
+                                        ^
+In file included from ..\src\menu\MenuPrimo.h:23:0,
+                 from ..\src\menu\MenuPrimo.cpp:21:
+..\src\menu\Menu.h:31:13: note: declared private here
+  utente_ref u;
+             ^
+..\src\menu\MenuPrimo.cpp:96:35: error: 'int Menu::prezzo' is private within this context
+  streamer << " Prezzo: " << this->prezzo <<endl;
+                                   ^~~~~~
+In file included from ..\src\menu\MenuPrimo.h:23:0,
+                 from ..\src\menu\MenuPrimo.cpp:21:
+..\src\menu\Menu.h:33:6: note: declared private here
+  int prezzo;
+      ^~~~~~
+..\src\menu\MenuPrimo.cpp:98:35: error: 'time_t Menu::data' is private within this context
+  tm* local_data_time = localtime(&data);
+                                   ^~~~
+In file included from ..\src\menu\MenuPrimo.h:23:0,
+                 from ..\src\menu\MenuPrimo.cpp:21:
+..\src\menu\Menu.h:35:9: note: declared private here
+  time_t data;
+         ^~~~
+..\src\menu\MenuPrimo.cpp:109:69: error: 'Orario Menu::o' is private within this context
+  streamer << " Orario: " << Menu::get_string_orario_from_enum(this->o) <<endl;
+                                                                     ^
+In file included from ..\src\menu\MenuPrimo.h:23:0,
+                 from ..\src\menu\MenuPrimo.cpp:21:
+..\src\menu\Menu.h:37:9: note: declared private here
+  Orario o;
+         ^
+09:11:08 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+src\menu\MenuPrimo.o: In function `ZN9MenuPrimoC1ESt10shared_ptrI6UtenteEil6Orarioiii':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:38: undefined reference to `vtable for MenuPrimo'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:38: undefined reference to `vtable for MenuPrimo'
+src\menu\MenuPrimo.o: In function `ZN9MenuPrimoC1ESt10shared_ptrI4MenuEiii':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:44: undefined reference to `vtable for MenuPrimo'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:44: undefined reference to `vtable for MenuPrimo'
+src\menu\MenuPrimo.o: In function `ZN9MenuPrimoD1Ev':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:99: undefined reference to `vtable for MenuPrimo'
+src\menu\MenuPrimo.o:C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:99: more undefined references to `vtable for MenuPrimo' follow
+collect2.exe: error: ld returned 1 exit status
+09:11:42 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+src\menu\MenuPrimo.o: In function `ZN9MenuPrimoC1ESt10shared_ptrI6UtenteEil6Orarioiii':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:38: undefined reference to `vtable for MenuPrimo'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:38: undefined reference to `vtable for MenuPrimo'
+src\menu\MenuPrimo.o: In function `ZN9MenuPrimoC1ESt10shared_ptrI4MenuEiii':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:44: undefined reference to `vtable for MenuPrimo'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:44: undefined reference to `vtable for MenuPrimo'
+src\menu\MenuPrimo.o: In function `ZN9MenuPrimoD1Ev':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:99: undefined reference to `vtable for MenuPrimo'
+src\menu\MenuPrimo.o:C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:99: more undefined references to `vtable for MenuPrimo' follow
+collect2.exe: error: ld returned 1 exit status
+09:12:47 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:91:60: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  streamer << "Primo: " << get_string_primo_from_enum(this->primo)
+                                                      ~~~~~~^~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:45:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_primo_from_enum(Primo)'
+  virtual string get_string_primo_from_enum(Primo const p);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\menu\MenuPrimo.cpp:92:65: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+     << " Dessert/frutta " << get_string_dessert_from_enum(this->dessert)
+                                                           ~~~~~~^~~~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:47:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_dessert_from_enum(Dessert)'
+  virtual string get_string_dessert_from_enum(Dessert const d);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\menu\MenuPrimo.cpp:93:55: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+     << " Caffe: " << get_string_caffe_from_enum(this->caffe)
+                                                 ~~~~~~^~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:49:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_caffe_from_enum(Caffe)'
+  virtual string get_string_caffe_from_enum(Caffe const c);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+09:13:26 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:91:60: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  streamer << "Primo: " << get_string_primo_from_enum(this->primo)
+                                                      ~~~~~~^~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:45:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_primo_from_enum(Primo)'
+  virtual string get_string_primo_from_enum(Primo const p);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\menu\MenuPrimo.cpp:92:65: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+     << " Dessert/frutta " << get_string_dessert_from_enum(this->dessert)
+                                                           ~~~~~~^~~~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:47:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_dessert_from_enum(Dessert)'
+  virtual string get_string_dessert_from_enum(Dessert const d);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\menu\MenuPrimo.cpp:93:55: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+     << " Caffe: " << get_string_caffe_from_enum(this->caffe)
+                                                 ~~~~~~^~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:49:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_caffe_from_enum(Caffe)'
+  virtual string get_string_caffe_from_enum(Caffe const c);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+09:14:01 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:91:60: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  streamer << "Primo: " << get_string_primo_from_enum(this->primo)
+                                                      ~~~~~~^~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:45:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_primo_from_enum(Primo)'
+  virtual string get_string_primo_from_enum(Primo const p);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\menu\MenuPrimo.cpp:92:65: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+     << " Dessert/frutta " << get_string_dessert_from_enum(this->dessert)
+                                                           ~~~~~~^~~~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:47:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_dessert_from_enum(Dessert)'
+  virtual string get_string_dessert_from_enum(Dessert const d);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\menu\MenuPrimo.cpp:93:55: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+     << " Caffe: " << get_string_caffe_from_enum(this->caffe)
+                                                 ~~~~~~^~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:49:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_caffe_from_enum(Caffe)'
+  virtual string get_string_caffe_from_enum(Caffe const c);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+09:15:10 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:91:60: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  streamer << "Primo: " << get_string_primo_from_enum(this->primo)
+                                                      ~~~~~~^~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:45:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_primo_from_enum(Primo)'
+  virtual string get_string_primo_from_enum(Primo const p);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\menu\MenuPrimo.cpp:92:66: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+     << " Dessert/frutta: " << get_string_dessert_from_enum(this->dessert)
+                                                            ~~~~~~^~~~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:47:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_dessert_from_enum(Dessert)'
+  virtual string get_string_dessert_from_enum(Dessert const d);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\menu\MenuPrimo.cpp:93:55: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+     << " Caffe: " << get_string_caffe_from_enum(this->caffe)
+                                                 ~~~~~~^~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:49:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_caffe_from_enum(Caffe)'
+  virtual string get_string_caffe_from_enum(Caffe const c);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+09:16:18 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:91:60: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  streamer << "Primo: " << get_string_primo_from_enum(this->primo);
+                                                      ~~~~~~^~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:45:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_primo_from_enum(Primo)'
+  virtual string get_string_primo_from_enum(Primo const p);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\menu\MenuPrimo.cpp:92:72: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+  streamer << " Dessert/frutta: " << get_string_dessert_from_enum(this->dessert);
+                                                                  ~~~~~~^~~~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:47:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_dessert_from_enum(Dessert)'
+  virtual string get_string_dessert_from_enum(Dessert const d);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\menu\MenuPrimo.cpp:93:61: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+  streamer << " Caffe: " << get_string_caffe_from_enum(this->caffe) << endl;
+                                                       ~~~~~~^~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:49:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_caffe_from_enum(Caffe)'
+  virtual string get_string_caffe_from_enum(Caffe const c);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+09:17:37 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:91:71: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  streamer << "Primo: " << MenuPrimo::get_string_primo_from_enum(this->primo)
+                                                                 ~~~~~~^~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:45:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_primo_from_enum(Primo)'
+  virtual string get_string_primo_from_enum(Primo const p);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\menu\MenuPrimo.cpp:92:76: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+    << " Dessert/frutta: " << MenuPrimo::get_string_dessert_from_enum(this->dessert)
+                                                                      ~~~~~~^~~~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:47:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_dessert_from_enum(Dessert)'
+  virtual string get_string_dessert_from_enum(Dessert const d);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\menu\MenuPrimo.cpp:93:65: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+    << " Caffe: " << MenuPrimo::get_string_caffe_from_enum(this->caffe)
+                                                           ~~~~~~^~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:49:17: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_caffe_from_enum(Caffe)'
+  virtual string get_string_caffe_from_enum(Caffe const c);
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~
+09:19:28 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:91:71: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  streamer << "Primo: " << MenuPrimo::get_string_primo_from_enum(this->primo)
+                                                                 ~~~~~~^~~~~
+..\src\menu\MenuPrimo.cpp:50:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_primo_from_enum(Primo)'
+ string MenuPrimo::get_string_primo_from_enum(Primo const p){
+        ^~~~~~~~~
+..\src\menu\MenuPrimo.cpp:92:76: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+    << " Dessert/frutta: " << MenuPrimo::get_string_dessert_from_enum(this->dessert)
+                                                                      ~~~~~~^~~~~~~
+..\src\menu\MenuPrimo.cpp:64:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_dessert_from_enum(Dessert)'
+ string MenuPrimo::get_string_dessert_from_enum(Dessert const d){
+        ^~~~~~~~~
+..\src\menu\MenuPrimo.cpp:93:65: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+    << " Caffe: " << MenuPrimo::get_string_caffe_from_enum(this->caffe)
+                                                           ~~~~~~^~~~~
+..\src\menu\MenuPrimo.cpp:76:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_caffe_from_enum(Caffe)'
+ string MenuPrimo::get_string_caffe_from_enum(Caffe const c){
+        ^~~~~~~~~
+09:20:10 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:91:71: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  streamer << "Primo: " << MenuPrimo::get_string_primo_from_enum(this->primo)
+                                                                 ~~~~~~^~~~~
+..\src\menu\MenuPrimo.cpp:50:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_primo_from_enum(Primo)'
+ string MenuPrimo::get_string_primo_from_enum(Primo p){
+        ^~~~~~~~~
+..\src\menu\MenuPrimo.cpp:92:76: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+    << " Dessert/frutta: " << MenuPrimo::get_string_dessert_from_enum(this->dessert)
+                                                                      ~~~~~~^~~~~~~
+..\src\menu\MenuPrimo.cpp:64:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_dessert_from_enum(Dessert)'
+ string MenuPrimo::get_string_dessert_from_enum(Dessert d){
+        ^~~~~~~~~
+..\src\menu\MenuPrimo.cpp:93:65: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+    << " Caffe: " << MenuPrimo::get_string_caffe_from_enum(this->caffe)
+                                                           ~~~~~~^~~~~
+..\src\menu\MenuPrimo.cpp:76:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_caffe_from_enum(Caffe)'
+ string MenuPrimo::get_string_caffe_from_enum(Caffe c){
+        ^~~~~~~~~
+09:20:45 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:91:71: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  streamer << "Primo: " << MenuPrimo::get_string_primo_from_enum(this->primo)
+                                                                 ~~~~~~^~~~~
+..\src\menu\MenuPrimo.cpp:50:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_primo_from_enum(Primo)'
+ string MenuPrimo::get_string_primo_from_enum(Primo p){
+        ^~~~~~~~~
+..\src\menu\MenuPrimo.cpp:92:76: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+    << " Dessert/frutta: " << MenuPrimo::get_string_dessert_from_enum(this->dessert)
+                                                                      ~~~~~~^~~~~~~
+..\src\menu\MenuPrimo.cpp:64:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_dessert_from_enum(Dessert)'
+ string MenuPrimo::get_string_dessert_from_enum(Dessert d){
+        ^~~~~~~~~
+..\src\menu\MenuPrimo.cpp:93:65: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+    << " Caffe: " << MenuPrimo::get_string_caffe_from_enum(this->caffe)
+                                                           ~~~~~~^~~~~
+..\src\menu\MenuPrimo.cpp:76:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_caffe_from_enum(Caffe)'
+ string MenuPrimo::get_string_caffe_from_enum(Caffe c){
+        ^~~~~~~~~
+09:25:20 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:91:71: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  streamer << "Primo: " << MenuPrimo::get_string_primo_from_enum(this->primo)
+                                                                 ~~~~~~^~~~~
+..\src\menu\MenuPrimo.cpp:50:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_primo_from_enum(Primo)'
+ string MenuPrimo::get_string_primo_from_enum(Primo const p){
+        ^~~~~~~~~
+..\src\menu\MenuPrimo.cpp:92:76: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+    << " Dessert/frutta: " << MenuPrimo::get_string_dessert_from_enum(this->dessert)
+                                                                      ~~~~~~^~~~~~~
+..\src\menu\MenuPrimo.cpp:64:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_dessert_from_enum(Dessert)'
+ string MenuPrimo::get_string_dessert_from_enum(Dessert const d){
+        ^~~~~~~~~
+..\src\menu\MenuPrimo.cpp:93:65: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+    << " Caffe: " << MenuPrimo::get_string_caffe_from_enum(this->caffe)
+                                                           ~~~~~~^~~~~
+..\src\menu\MenuPrimo.cpp:76:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_caffe_from_enum(Caffe)'
+ string MenuPrimo::get_string_caffe_from_enum(Caffe const c){
+        ^~~~~~~~~
+09:25:48 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+09:27:51 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In member function 'virtual std::__cxx11::string MenuPrimo::get_string()':
+..\src\menu\MenuPrimo.cpp:91:71: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  streamer << "Primo: " << MenuPrimo::get_string_primo_from_enum(this->primo);
+                                                                 ~~~~~~^~~~~
+..\src\menu\MenuPrimo.cpp:50:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_primo_from_enum(Primo)'
+ string MenuPrimo::get_string_primo_from_enum(Primo const p){
+        ^~~~~~~~~
+..\src\menu\MenuPrimo.cpp:92:75: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+  streamer << "Dessert: " << MenuPrimo::get_string_dessert_from_enum(this->dessert);
+                                                                     ~~~~~~^~~~~~~
+..\src\menu\MenuPrimo.cpp:64:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_dessert_from_enum(Dessert)'
+ string MenuPrimo::get_string_dessert_from_enum(Dessert const d){
+        ^~~~~~~~~
+..\src\menu\MenuPrimo.cpp:93:71: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+  streamer << "Primo: " << MenuPrimo::get_string_caffe_from_enum(this->caffe);
+                                                                 ~~~~~~^~~~~
+..\src\menu\MenuPrimo.cpp:76:8: note:   initializing argument 1 of 'virtual std::__cxx11::string MenuPrimo::get_string_caffe_from_enum(Caffe)'
+ string MenuPrimo::get_string_caffe_from_enum(Caffe const c){
+        ^~~~~~~~~
+09:29:20 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp: In constructor 'MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, int, int, int)':
+..\src\menu\MenuPrimo.cpp:39:16: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  this->primo = primo;
+                ^~~~~
+..\src\menu\MenuPrimo.cpp:40:18: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+  this->dessert = dessert;
+                  ^~~~~~~
+..\src\menu\MenuPrimo.cpp:41:16: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+  this->caffe = caffe;
+                ^~~~~
+..\src\menu\MenuPrimo.cpp: In constructor 'MenuPrimo::MenuPrimo(menu_ref, int, int, int)':
+..\src\menu\MenuPrimo.cpp:45:16: error: invalid conversion from 'int' to 'Primo' [-fpermissive]
+  this->primo = primo;
+                ^~~~~
+..\src\menu\MenuPrimo.cpp:46:18: error: invalid conversion from 'int' to 'Dessert' [-fpermissive]
+  this->dessert = dessert;
+                  ^~~~~~~
+..\src\menu\MenuPrimo.cpp:47:16: error: invalid conversion from 'int' to 'Caffe' [-fpermissive]
+  this->caffe = caffe;
+                ^~~~~
+09:30:20 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp:37:1: error: prototype for 'MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)' does not match any in class 'MenuPrimo'
+ MenuPrimo::MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe):
+ ^~~~~~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:33:7: error: candidates are: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: error:                 MenuPrimo::MenuPrimo(menu_ref, int, int, int)
+  MenuPrimo(menu_ref menu, int primo, int dessert, int caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: error:                 MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, int, int, int)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, int primo, int dessert, int caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.cpp:44:1: error: prototype for 'MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)' does not match any in class 'MenuPrimo'
+ MenuPrimo::MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe) : Menu::Menu(*menu){
+ ^~~~~~~~~
+In file included from ..\src\menu\MenuPrimo.cpp:21:0:
+..\src\menu\MenuPrimo.h:33:7: error: candidates are: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: error:                 MenuPrimo::MenuPrimo(menu_ref, int, int, int)
+  MenuPrimo(menu_ref menu, int primo, int dessert, int caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: error:                 MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, int, int, int)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, int primo, int dessert, int caffe);
+  ^~~~~~~~~
+09:30:44 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+09:33:15 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+09:37:55 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+09:38:45 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 

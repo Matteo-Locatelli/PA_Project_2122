@@ -53,9 +53,9 @@ public:
 
 	virtual void set_ora(Orario const o);
 
-	virtual string get_string();
+	virtual string get_string_orario_from_enum(Orario const o);
 
-	virtual string getStringFromEnum(Orario const o);
+	virtual string get_string();
 
 	virtual ~Menu();
 };

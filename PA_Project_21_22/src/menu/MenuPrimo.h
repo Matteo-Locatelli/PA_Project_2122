@@ -33,14 +33,20 @@ enum Caffe : int;
 class MenuPrimo : public virtual Menu{
 
 private:
-	int primo;
-	int dessert;
-	int caffe;
+	Primo primo;
+	Dessert dessert;
+	Caffe caffe;
 
 public:
-	MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, int primo, int dessert, int caffe);
+	MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
 
-	MenuPrimo(menu_ref menu, int primo, int dessert, int caffe);
+	MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+
+	virtual string get_string_primo_from_enum(Primo const p);
+
+	virtual string get_string_dessert_from_enum(Dessert const d);
+
+	virtual string get_string_caffe_from_enum(Caffe const c);
 
 	virtual string get_string();
 

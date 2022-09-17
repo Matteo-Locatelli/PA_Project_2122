@@ -30,8 +30,8 @@ void Gestore::init(){
 void Gestore::stampa_lista_menu(){
 	cout << "Menu disponibili: " << endl;
 	cout << "Menu primo: primo a scelta + frutta/dolce + caffe -> 10€" << endl;
-	cout << "Menu primo: secondo a scelta + frutta/dolce + caffe -> 10€" << endl;
-	cout << "Menu primo: primo a scelta + secondo a scelta + frutta/dolce + caffe -> 15€" << endl;
+	cout << "Menu primo: secondo a scelta + contorno + caffe -> 10€" << endl;
+	cout << "Menu primo: primo a scelta + secondo a scelta + contorno + frutta/dolce + caffe -> 15€" << endl;
 }
 
 void Gestore::stampa_lista_menu_primo(){

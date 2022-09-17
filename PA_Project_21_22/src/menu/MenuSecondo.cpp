@@ -14,43 +14,80 @@
 #include <vector>
 #include <list>
 
-#include "../utente/Utente.h"
-#include "../utente/Studente.h"
-#include "../utente/Professore.h"
-
 #include "MenuSecondo.h"
 
 using namespace std;
 
 enum Secondo : int {
-	pizza = 0, lasagne = 1, pasta = 2, riso = 3
+	pollo = 0, bistecca = 1, branzino = 2
 };
 
-enum Dessert : int {
-	tiramisu = 0, cheesecake = 1, frutta = 2
+enum Contorno : int {
+	insalata = 0, patate = 1, legumi = 2
 };
 
 enum Caffe : int{
 	no = 0, si = 1
 };
 
-MenuSecondo::MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, int secondo, int dessert, int caffe):
+MenuSecondo::MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe):
 		Menu(u, prezzo, data, o){
 	this->secondo = secondo;
-	this->dessert = dessert;
+	this->contorno = contorno;
 	this->caffe = caffe;
 }
 
-MenuSecondo::MenuSecondo(menu_ref menu, int secondo, int dessert, int caffe) : Menu(*menu){
+MenuSecondo::MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe) : Menu(*menu){
 	this->secondo = secondo;
-	this->dessert = dessert;
+	this->contorno = contorno;
 	this->caffe = caffe;
+}
+
+string MenuSecondo::get_string_secondo_from_enum(Secondo const s){
+	if(s==Secondo::pollo){
+		return "Pollo";
+	} else if (s==Secondo::bistecca){
+		return "Bistecca";
+	} else if (s==Secondo::branzino){
+		return "Branzino";
+	} else {
+		return "Errore";
+	}
+}
+
+string MenuSecondo::get_string_contorno_from_enum(Contorno const c){
+	if(c==Contorno::insalata){
+		return "Insalata";
+	} else if (c==Contorno::patate){
+		return "Patate";
+	} else if (c==Contorno::legumi){
+		return "Legumi";
+	} else {
+		return "Errore";
+	}
+}
+
+string MenuSecondo::get_string_caffe_from_enum(Caffe const c){
+	if(c==Caffe::no){
+		return "No";
+	} else if (c==Caffe::si){
+		return "Si";
+	} else {
+		return "Errore";
+	}
 }
 
 string MenuSecondo::get_string(){
-	stringstream stream;
+	stringstream streamer;
 
-	return stream.str();
+	streamer << Menu::get_string() <<endl;
+
+	streamer << "Primo: " << MenuSecondo::get_string_secondo_from_enum(this->secondo);
+	streamer << "Dessert: " << MenuSecondo::get_string_contorno_from_enum(this->contorno);
+	streamer << "Primo: " << MenuSecondo::get_string_caffe_from_enum(this->caffe);
+	streamer << endl;
+
+	return streamer.str();
 }
 
 MenuSecondo::~MenuSecondo(){
