@@ -21,8 +21,6 @@
 #include "../utente/Professore.h"
 
 #include "Menu.h"
-#include "MenuPrimo.h"
-#include "MenuSecondo.h"
 
 using namespace std;
 

@@ -1207,3 +1207,30 @@ Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
 g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+12:12:30 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:15:0,
+                 from ..\src\gestore\Gestore.cpp:8:
+..\src\gestore\../menu/MenuCompleto.h:27:38: error: expected class-name before ',' token
+ class MenuCompleto : public MenuPrimo, MenuSecondo {
+                                      ^
+..\src\gestore\../menu/MenuCompleto.h:27:52: error: expected class-name before '{' token
+ class MenuCompleto : public MenuPrimo, MenuSecondo {
+                                                    ^
+12:13:00 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:15:0,
+                 from ..\src\gestore\Gestore.cpp:8:
+..\src\gestore\../menu/MenuCompleto.h:29:7: error: no unique final overrider for 'virtual std::__cxx11::string Menu::get_string()' in 'MenuCompleto'
+ class MenuCompleto : public MenuPrimo, MenuSecondo {
+       ^~~~~~~~~~~~
+12:13:31 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:15:0,
+                 from ..\src\gestore\Gestore.cpp:8:
+..\src\gestore\../menu/MenuCompleto.h:29:7: error: no unique final overrider for 'virtual std::__cxx11::string Menu::get_string()' in 'MenuCompleto'
+ class MenuCompleto : public MenuPrimo, MenuSecondo {
+       ^~~~~~~~~~~~
