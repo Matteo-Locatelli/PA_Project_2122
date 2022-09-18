@@ -1,11 +1,14 @@
-12:13:31 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+23:43:55 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
-In file included from ..\src\gestore\Gestore.h:15:0,
-                 from ..\src\gestore\Gestore.cpp:8:
-..\src\gestore\../menu/MenuCompleto.h:29:7: error: no unique final overrider for 'virtual std::__cxx11::string Menu::get_string()' in 'MenuCompleto'
- class MenuCompleto : public MenuPrimo, MenuSecondo {
-       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:16:0,
+                 from ..\src\gestore\Stampe.cpp:8:
+..\src\gestore\../menu/MenuCompleto.h:33:2: error: 'MenuCompleto::MenuCompleto()' cannot be overloaded
+  MenuCompleto();
+  ^~~~~~~~~~~~
+..\src\gestore\../menu/MenuCompleto.h:31:2: error: with 'MenuCompleto::MenuCompleto()'
+  MenuCompleto();
+  ^~~~~~~~~~~~
 
-12:13:32 Build Failed. 1 errors, 0 warnings. (took 568ms)
+23:43:55 Build Failed. 2 errors, 0 warnings. (took 483ms)
 

@@ -26,17 +26,10 @@
 
 using namespace std;
 
-class MenuCompleto : public MenuPrimo, public MenuSecondo {
-public:
-	MenuCompleto();
+class MenuCompleto : public MenuPrimo, MenuSecondo {
 
-	MenuCompleto();
-
-	virtual string get_string();
-
-	~MenuCompleto();
 };
 
-typedef shared_ptr<MenuCompleto> menu_completo_ref;
+
 
 #endif /* MENU_MENUCOMPLETO_H_ */

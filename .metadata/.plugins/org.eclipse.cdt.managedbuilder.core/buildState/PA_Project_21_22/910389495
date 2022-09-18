@@ -1,9 +1,13 @@
 #
-#Sat Sep 17 12:13:32 CEST 2022
+#Sun Sep 18 23:43:55 CEST 2022
+src/menu/MenuPrimo.h=1
 Debug/src/gestore/Stampe.o=1
 Debug/src/PA_Project_21_22.o=1
+src/menu/MenuSecondo.h=1
 Debug/src/gestore/Gestore.o=1
 Debug/PA_Project_21_22.exe=1
 src/menu/MenuCompleto.cpp=1
+Debug/src/menu/MenuPrimo.o=1
 Debug/src/menu/MenuCompleto.o=1
+Debug/src/menu/MenuSecondo.o=1
 src/menu/MenuCompleto.h=1
