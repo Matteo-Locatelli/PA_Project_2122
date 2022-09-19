@@ -15,6 +15,7 @@
 #include "../menu/MenuCompleto.h"
 #include "../menu/MenuPrimo.h"
 #include "../menu/MenuSecondo.h"
+
 #include "Stampe.h"
 
 using namespace std;
@@ -27,28 +28,55 @@ void Gestore::init(){
 
 }
 
+void Gestore::nuovo_menu_primo(){
+
+}
+
+void Gestore::nuovo_menu_secondo(){
+
+}
+
+void Gestore::nuovo_menu_completo(){
+
+}
+
 void Gestore::stampa_lista_menu(){
-	cout << "Menu disponibili: " << endl;
-	cout << "Menu primo: primo a scelta + frutta/dolce + caffe -> 10€" << endl;
-	cout << "Menu primo: secondo a scelta + contorno + caffe -> 10€" << endl;
-	cout << "Menu primo: primo a scelta + secondo a scelta + contorno + frutta/dolce + caffe -> 15€" << endl;
+	stampa_lista_menu_primo();
+	stampa_lista_menu_secondo();
+	stampa_lista_menu_completo();
 }
 
 void Gestore::stampa_lista_menu_primo(){
 	cout << "Menu primo: " << endl;
-
+	// stampare lista degli utenti con menu primo
 }
 
 void Gestore::stampa_lista_menu_secondo(){
 	cout << "Menu secondo: " << endl;
-
+	// stampare lista utenti con menu secondo
 }
 
 void Gestore::stampa_lista_menu_completo(){
 	cout << "Menu completo: " << endl;
+	// stampare lista utenti con menu completo
+}
 
+void Gestore::stampa_opzioni_menu(){
+	stampa_menu();
+}
+
+void Gestore::stampa_opzioni_menu_primo(){
+	stampa_menu_primo();
+}
+
+void Gestore::stampa_opzioni_menu_secondo(){
+	stampa_menu_secondo();
+}
+
+void Gestore::stampa_opzioni_menu_completo(){
+	stampa_menu_completo();
 }
 
 Gestore::~Gestore(){
-
+	cout << "Elimino gestore" << endl;
 }

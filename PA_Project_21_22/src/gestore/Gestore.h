@@ -26,6 +26,12 @@ public:
 
 	Gestore();
 
+	void nuovo_menu_primo();
+
+	void nuovo_menu_secondo();
+
+	void nuovo_menu_completo();
+
 	void stampa_lista_menu();
 
 	void stampa_lista_menu_primo();
@@ -33,6 +39,14 @@ public:
 	void stampa_lista_menu_secondo();
 
 	void stampa_lista_menu_completo();
+
+	void stampa_opzioni_menu();
+
+	void stampa_opzioni_menu_primo();
+
+	void stampa_opzioni_menu_secondo();
+
+	void stampa_opzioni_menu_completo();
 
 	~Gestore();
 };

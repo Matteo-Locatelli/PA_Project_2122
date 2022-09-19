@@ -30,7 +30,6 @@ private:
 
 	string codice_professore;
 
-
 public:
 	Professore(string nome, string cognome);
 

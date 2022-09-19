@@ -56,5 +56,4 @@ public:
 typedef shared_ptr<MenuSecondo> menu_secondo_ref;
 
 
-
 #endif /* MENU_MENUSECONDO_H_ */

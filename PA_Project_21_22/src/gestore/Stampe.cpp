@@ -5,41 +5,50 @@
  *      Author: matte
  */
 
-#include "Stampe.h"
-
 #include <vector>
 #include <string>
 #include <list>
 #include <iostream>
 
+#include "Stampe.h"
 
 using namespace std;
 
 void stampa_menu() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
-	cout << "Dettaglio menu: " << endl;
-	cout << "Menu" << endl;
+	cout << "Menu disponibili: " << endl;
+	cout << "Menu primo: primo a scelta + dessert/frutta a scelta + caffe -> 10€" << endl;
+	cout << "Menu secondo: secondo a scelta + contorno a scelta + caffe -> 10€" << endl;
+	cout << "Menu completo: primo a scelta + secondo a scelta + contorno a scelta + dessert/frutta + caffe -> 15€" << endl;
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 }
 
 void stampa_menu_primo() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
-	cout << "Dettaglio menu: " << endl;
-	cout << "Menu primo" << endl;
+	cout << "Dettaglio menu primo a 10€: " << endl;
+	cout << "Primo a scelta tra: pizza, lasagne, pasta, riso" << endl;
+	cout << "Dessert a scelta tra: tiramisu, cheesecake, frutta" << endl;
+	cout << "Caffe" << endl;
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 }
 
 void stampa_menu_secondo() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
-	cout << "Dettaglio menu: " << endl;
-	cout << "Menu secondo" << endl;
+	cout << "Dettaglio menu secondo a 10€: " << endl;
+	cout << "Secondo a scelta tra: pollo, bistecca, branzino" << endl;
+	cout << "Contorno a scelta tra: insalata, patate, legumi" << endl;
+	cout << "Caffe" << endl;
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 }
 
 void stampa_menu_completo() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
-	cout << "Dettaglio menu: " << endl;
-	cout << "Menu completo" << endl;
+	cout << "Dettaglio menu completo 15€: " << endl;
+	cout << "Primo a scelta tra: pizza, lasagne, pasta, riso" << endl;
+	cout << "Secondo a scelta tra: pollo, bistecca, branzino" << endl;
+	cout << "Contorno a scelta tra: insalata, patate, legumi" << endl;
+	cout << "Dessert a scelta tra: tiramisu, cheesecake, frutta" << endl;
+	cout << "Caffe" << endl;
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 }
 

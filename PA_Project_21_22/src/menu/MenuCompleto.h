@@ -28,9 +28,11 @@ using namespace std;
 
 class MenuCompleto : public MenuPrimo, public MenuSecondo {
 public:
-	MenuCompleto();
+	MenuCompleto(utente_ref u, int prezzo , time_t data, Orario o,
+			Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe);
 
-	MenuCompleto();
+	MenuCompleto(menu_ref menu,
+			Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe);
 
 	virtual string get_string();
 

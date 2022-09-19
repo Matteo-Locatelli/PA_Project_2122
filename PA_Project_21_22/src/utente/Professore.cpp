@@ -18,9 +18,10 @@
 
 using namespace std;
 
-unsigned int  Professore::num_professori = 0;
+unsigned int Professore::num_professori = 0;
 
 Professore::Professore(string nome, string cognome) : Utente(nome, cognome){
+	num_professori++;
 	codice_professore = PROFESSORE_PREFIX + to_string(Utente::get_codice());
 	cout << "Creo professore " << codice_professore << " " << Utente::get_string() <<endl;
 }

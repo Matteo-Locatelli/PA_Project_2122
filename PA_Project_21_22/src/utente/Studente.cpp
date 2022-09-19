@@ -21,6 +21,7 @@ using namespace std;
 unsigned int  Studente::num_studenti = 0;
 
 Studente::Studente(string nome, string cognome) : Utente(nome, cognome){
+	num_studenti++;
 	codice_studente = STUDENTE_PREFIX + to_string(Utente::get_codice());
 	cout << "Creo studente " << codice_studente << " " << Utente::get_string() <<endl;
 }

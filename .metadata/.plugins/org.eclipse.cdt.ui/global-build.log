@@ -1261,3 +1261,1188 @@ In file included from ..\src\gestore\Stampe.h:16:0,
 ..\src\gestore\../menu/MenuCompleto.h:31:2: error: with 'MenuCompleto::MenuCompleto()'
   MenuCompleto();
   ^~~~~~~~~~~~
+19:00:39 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:15:0,
+                 from ..\src\gestore\Gestore.cpp:8:
+..\src\gestore\../menu/MenuCompleto.h:33:2: error: 'MenuCompleto::MenuCompleto()' cannot be overloaded
+  MenuCompleto();
+  ^~~~~~~~~~~~
+..\src\gestore\../menu/MenuCompleto.h:31:2: error: with 'MenuCompleto::MenuCompleto()'
+  MenuCompleto();
+  ^~~~~~~~~~~~
+19:02:55 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+In file included from ..\src\menu\MenuCompleto.cpp:17:0:
+..\src\menu\MenuCompleto.h:33:2: error: 'MenuCompleto::MenuCompleto()' cannot be overloaded
+  MenuCompleto();
+  ^~~~~~~~~~~~
+..\src\menu\MenuCompleto.h:31:2: error: with 'MenuCompleto::MenuCompleto()'
+  MenuCompleto();
+  ^~~~~~~~~~~~
+19:03:13 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:15:0,
+                 from ..\src\gestore\Gestore.cpp:8:
+..\src\gestore\../menu/MenuCompleto.h:33:2: error: 'MenuCompleto::MenuCompleto()' cannot be overloaded
+  MenuCompleto();
+  ^~~~~~~~~~~~
+..\src\gestore\../menu/MenuCompleto.h:31:2: error: with 'MenuCompleto::MenuCompleto()'
+  MenuCompleto();
+  ^~~~~~~~~~~~
+19:07:10 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_21_22.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:08:25 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_21_22.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:08:37 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_21_22.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:09:46 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+19:12:12 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(utente_ref, int, time_t, Orario, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(menu_ref, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+19:13:21 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(utente_ref, int, time_t, Orario, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:23:36: error: no matching function for call to 'Menu::Menu()'
+     MenuPrimo(primo, dessert, caffe){
+                                    ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:23:36: error: no matching function for call to 'MenuPrimo::MenuPrimo(Primo&, Dessert&, Caffe&)'
+     MenuPrimo(primo, dessert, caffe){
+                                    ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 3 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 3 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 3 provided
+..\src\menu\MenuCompleto.cpp:23:36: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+     MenuPrimo(primo, dessert, caffe){
+                                    ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(menu_ref, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+19:13:36 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(utente_ref, int, time_t, Orario, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:23:47: error: no matching function for call to 'Menu::Menu()'
+     MenuPrimo::MenuPrimo(primo, dessert, caffe){
+                                               ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:23:47: error: no matching function for call to 'MenuPrimo::MenuPrimo(Primo&, Dessert&, Caffe&)'
+     MenuPrimo::MenuPrimo(primo, dessert, caffe){
+                                               ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 3 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 3 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 3 provided
+..\src\menu\MenuCompleto.cpp:23:47: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+     MenuPrimo::MenuPrimo(primo, dessert, caffe){
+                                               ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(menu_ref, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+19:14:57 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(utente_ref, int, time_t, Orario, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:23:67: error: no matching function for call to 'Menu::Menu()'
+     MenuPrimo::MenuPrimo(u, prezzo, data, o, primo, dessert, caffe){
+                                                                   ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:23:67: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+     MenuPrimo::MenuPrimo(u, prezzo, data, o, primo, dessert, caffe){
+                                                                   ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(menu_ref, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+19:15:53 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(utente_ref, int, time_t, Orario, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:23:74: error: no matching function for call to 'Menu::Menu()'
+     MenuSecondo::MenuSecondo(u, prezzo, data, o, secondo, contorno, caffe){
+                                                                          ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:23:74: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+     MenuSecondo::MenuSecondo(u, prezzo, data, o, secondo, contorno, caffe){
+                                                                          ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(menu_ref, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+19:16:12 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(utente_ref, int, time_t, Orario, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:23:34: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+     Menu::Menu(u, prezzo, data, o){
+                                  ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:23:34: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+     Menu::Menu(u, prezzo, data, o){
+                                  ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(menu_ref, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:28:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+19:17:52 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(utente_ref, int, time_t, Orario, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(menu_ref, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+19:24:23 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(utente_ref, int, time_t, Orario, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(menu_ref, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+19:33:03 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(utente_ref, int, time_t, Orario, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(menu_ref, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+19:37:50 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(utente_ref, int, time_t, Orario, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(menu_ref, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+19:38:27 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(utente_ref, int, time_t, Orario, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:22:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp: In constructor 'MenuCompleto::MenuCompleto(menu_ref, Primo, Secondo, Contorno, Dessert, Caffe)':
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'Menu::Menu()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:23:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\Menu.h:42:2: note: candidate: Menu::Menu(const Menu&)
+  Menu(const Menu &menu);
+  ^~~~
+..\src\menu\Menu.h:42:2: note:   candidate expects 1 argument, 0 provided
+..\src\menu\Menu.h:40:2: note: candidate: Menu::Menu(utente_ref, int, time_t, Orario)
+  Menu(utente_ref u, int prezzo , time_t data, Orario o);
+  ^~~~
+..\src\menu\Menu.h:40:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'MenuPrimo::MenuPrimo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:24:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuPrimo.h:43:2: note: candidate: MenuPrimo::MenuPrimo(menu_ref, Primo, Dessert, Caffe)
+  MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuPrimo.h:41:2: note: candidate: MenuPrimo::MenuPrimo(utente_ref, int, time_t, Orario, Primo, Dessert, Caffe)
+  MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
+  ^~~~~~~~~
+..\src\menu\MenuPrimo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuPrimo.h:33:7: note: candidate: MenuPrimo::MenuPrimo(const MenuPrimo&)
+ class MenuPrimo : public virtual Menu{
+       ^~~~~~~~~
+..\src\menu\MenuPrimo.h:33:7: note:   candidate expects 1 argument, 0 provided
+..\src\menu\MenuCompleto.cpp:27:80: error: no matching function for call to 'MenuSecondo::MenuSecondo()'
+   Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe){
+                                                                                ^
+In file included from ..\src\menu\MenuCompleto.h:25:0,
+                 from ..\src\menu\MenuCompleto.cpp:17:
+..\src\menu\MenuSecondo.h:43:2: note: candidate: MenuSecondo::MenuSecondo(menu_ref, Secondo, Contorno, Caffe)
+  MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:43:2: note:   candidate expects 4 arguments, 0 provided
+..\src\menu\MenuSecondo.h:41:2: note: candidate: MenuSecondo::MenuSecondo(utente_ref, int, time_t, Orario, Secondo, Contorno, Caffe)
+  MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
+  ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:41:2: note:   candidate expects 7 arguments, 0 provided
+..\src\menu\MenuSecondo.h:33:7: note: candidate: MenuSecondo::MenuSecondo(const MenuSecondo&)
+ class MenuSecondo : public virtual Menu{
+       ^~~~~~~~~~~
+..\src\menu\MenuSecondo.h:33:7: note:   candidate expects 1 argument, 0 provided
+19:39:15 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_21_22.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:39:26 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_21_22.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:39:48 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_21_22.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:40:22 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+src\PA_Project_21_22.o: In function `main':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:41: undefined reference to `Gestore::stampa_opzioni_menu()'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:44: undefined reference to `Gestore::stampa_opzioni_menu_primo()'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:47: undefined reference to `Gestore::stampa_opzioni_menu_secondo()'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:50: undefined reference to `Gestore::stampa_opzioni_menu_completo()'
+collect2.exe: error: ld returned 1 exit status
+19:40:36 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+src\PA_Project_21_22.o: In function `main':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:41: undefined reference to `Gestore::stampa_opzioni_menu()'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:44: undefined reference to `Gestore::stampa_opzioni_menu_primo()'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:47: undefined reference to `Gestore::stampa_opzioni_menu_secondo()'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:50: undefined reference to `Gestore::stampa_opzioni_menu_completo()'
+collect2.exe: error: ld returned 1 exit status
+19:45:03 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+src\PA_Project_21_22.o: In function `main':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:41: undefined reference to `Gestore::stampa_opzioni_menu()'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:44: undefined reference to `Gestore::stampa_opzioni_menu_primo()'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:47: undefined reference to `Gestore::stampa_opzioni_menu_secondo()'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/PA_Project_21_22.cpp:50: undefined reference to `Gestore::stampa_opzioni_menu_completo()'
+collect2.exe: error: ld returned 1 exit status
+19:47:17 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22
+21:37:17 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+21:43:51 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+21:45:18 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 

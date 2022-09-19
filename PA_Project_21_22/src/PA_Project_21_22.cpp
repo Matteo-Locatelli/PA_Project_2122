@@ -38,16 +38,16 @@ int main() {
 			}
 			switch (scelta) {
 			case 0:
-				gestore->stampa_lista_menu();
+				gestore->stampa_opzioni_menu();
 				break;
 			case 1:
-				gestore->stampa_lista_menu_primo();
+				gestore->stampa_opzioni_menu_primo();
 				break;
 			case 2:
-				gestore->stampa_lista_menu_secondo();
+				gestore->stampa_opzioni_menu_secondo();
 				break;
 			case 3:
-				gestore->stampa_lista_menu_completo();
+				gestore->stampa_opzioni_menu_completo();
 				break;
 			default:
 				cout << "Scelta non valida!" << endl;
@@ -60,7 +60,7 @@ int main() {
 	}
 
 	cout << "Grazie per aver usato il nostro sistema di prenotazioni! " << endl;
-	cout << "Arrivederci e buon appetito! ";
+	cout << "Arrivederci e buon appetito! " << endl;
 
 	return 0;
 
