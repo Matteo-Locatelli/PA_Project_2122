@@ -19,7 +19,6 @@
 
 using namespace std;
 
-
 enum Orario : int {
 	pranzo=0, cena=1
 };
@@ -58,8 +57,8 @@ void Menu::set_data(time_t const data){
 	this->data = data;
 }
 
-string Menu::get_ora(){
-	return get_string_orario_from_enum(this->o);
+Orario Menu::get_ora(){
+	return this->o;
 }
 
 void Menu::set_ora(Orario const o){
@@ -90,7 +89,7 @@ string Menu::get_string(){
 		int day = local_data_time->tm_mday;
 		streamer << year << "-" << month << "-" << day << endl;
 	} else {
-		streamer << "null ";
+		streamer << "null " << endl;
 	}
 
 	streamer << " Orario: " << Menu::get_string_orario_from_enum(this->o) <<endl;

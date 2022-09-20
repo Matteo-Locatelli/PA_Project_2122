@@ -25,9 +25,7 @@
 using namespace std;
 
 enum Primo : int;
-
 enum Dessert : int;
-
 enum Caffe : int;
 
 class MenuPrimo : public virtual Menu{
@@ -42,11 +40,23 @@ public:
 
 	MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
 
-	virtual string get_string_primo_from_enum(Primo const p);
+	virtual Primo get_primo();
 
-	virtual string get_string_dessert_from_enum(Dessert const d);
+	virtual void set_primo(Primo const p);
 
-	virtual string get_string_caffe_from_enum(Caffe const c);
+	virtual Dessert get_dessert();
+
+	virtual void set_dessert(Dessert const d);
+
+	virtual Caffe get_caffe();
+
+	virtual void set_caffe(Caffe const c);
+
+	string get_string_primo_from_enum(Primo const p);
+
+	string get_string_dessert_from_enum(Dessert const d);
+
+	string get_string_caffe_from_enum(Caffe const c);
 
 	virtual string get_string();
 

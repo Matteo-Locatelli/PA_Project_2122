@@ -1,0 +1,45 @@
+/*
+ * MenuCompleto.cpp
+ *
+ *  Created on: 17 ago 2022
+ *      Author: matte
+ */
+
+#include <iostream>
+#include <cstdlib>
+#include <string>
+#include <sstream>
+#include <ctime>
+#include <memory>
+#include <vector>
+#include <list>
+
+#include "MenuCompleto.h"
+
+using namespace std;
+
+MenuCompleto::MenuCompleto(utente_ref u, int prezzo , time_t data, Orario o,
+		Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe) :
+		Menu::Menu(u, prezzo, data, o),
+		MenuPrimo::MenuPrimo(u, prezzo, data, o, primo, dessert, caffe),
+		MenuSecondo::MenuSecondo(u, prezzo, data, o, secondo, contorno, caffe) {
+
+}
+
+MenuCompleto::MenuCompleto(menu_ref menu,
+		Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe) :
+		Menu::Menu(*menu)
+		MenuPrimo::MenuPrimo(menu, primo, dessert, caffe),
+		MenuSecondo::MenuSecondo(menu, secondo, contorno, caffe){
+
+}
+
+string MenuCompleto::get_string(){
+	stringstream streamer;
+
+	return streamer.str();
+}
+
+MenuCompleto::~MenuCompleto(){
+	cout << "Elimino menu completo" <<endl;
+}

@@ -25,9 +25,7 @@
 using namespace std;
 
 enum Secondo : int;
-
 enum Contorno : int;
-
 enum Caffe : int;
 
 class MenuSecondo : public virtual Menu{
@@ -42,11 +40,23 @@ public:
 
 	MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
 
-	virtual string get_string_secondo_from_enum(Secondo const c);
+	virtual Secondo get_secondo();
 
-	virtual string get_string_contorno_from_enum(Contorno const n);
+	virtual void set_secondo(Secondo const s);
 
-	virtual string get_string_caffe_from_enum(Caffe const c);
+	virtual Contorno get_contorno();
+
+	virtual void set_contorno(Contorno const c);
+
+	virtual Caffe get_caffe();
+
+	virtual void set_caffe(Caffe const c);
+
+	string get_string_secondo_from_enum(Secondo const c);
+
+	string get_string_contorno_from_enum(Contorno const n);
+
+	string get_string_caffe_from_enum(Caffe const c);
 
 	virtual string get_string();
 
@@ -54,6 +64,5 @@ public:
 };
 
 typedef shared_ptr<MenuSecondo> menu_secondo_ref;
-
 
 #endif /* MENU_MENUSECONDO_H_ */

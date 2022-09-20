@@ -27,13 +27,9 @@ enum Orario : int;
 class Menu {
 
 private:
-
 	utente_ref u;
-
 	int prezzo;
-
 	time_t data;
-
 	Orario o;
 
 public:
@@ -49,7 +45,7 @@ public:
 
 	virtual void set_data(time_t const data);
 
-	virtual string get_ora();
+	virtual Orario get_ora();
 
 	virtual void set_ora(Orario const o);
 

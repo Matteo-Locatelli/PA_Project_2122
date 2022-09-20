@@ -43,6 +43,30 @@ MenuSecondo::MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caff
 	this->caffe = caffe;
 }
 
+Secondo MenuSecondo::get_secondo(){
+	return this->secondo;
+}
+
+void MenuSecondo::set_secondo(Secondo const s){
+	this->secondo = s;
+}
+
+Contorno MenuSecondo::get_contorno(){
+	return this->contorno;
+}
+
+void MenuSecondo::set_contorno(Contorno const c){
+	this->contorno = c;
+}
+
+Caffe MenuSecondo::get_caffe(){
+	return this->caffe;
+}
+
+void MenuSecondo::set_caffe(Caffe const c){
+	this->caffe = c;
+}
+
 string MenuSecondo::get_string_secondo_from_enum(Secondo const s){
 	if(s==Secondo::pollo){
 		return "Pollo";
@@ -80,12 +104,11 @@ string MenuSecondo::get_string_caffe_from_enum(Caffe const c){
 string MenuSecondo::get_string(){
 	stringstream streamer;
 
-	streamer << Menu::get_string() <<endl;
+	streamer << Menu::get_string() << endl;
 
-	streamer << "Primo: " << MenuSecondo::get_string_secondo_from_enum(this->secondo);
-	streamer << "Dessert: " << MenuSecondo::get_string_contorno_from_enum(this->contorno);
-	streamer << "Primo: " << MenuSecondo::get_string_caffe_from_enum(this->caffe);
-	streamer << endl;
+	streamer << "Secondo: " << MenuSecondo::get_string_secondo_from_enum(this->secondo) << endl;
+	streamer << "Contorno: " << MenuSecondo::get_string_contorno_from_enum(this->contorno) << endl;
+	streamer << "Caffe: " << MenuSecondo::get_string_caffe_from_enum(this->caffe) << endl;
 
 	return streamer.str();
 }

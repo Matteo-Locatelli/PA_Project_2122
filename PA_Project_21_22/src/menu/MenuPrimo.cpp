@@ -43,6 +43,30 @@ MenuPrimo::MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe) :
 	this->caffe = caffe;
 }
 
+Primo MenuPrimo::get_primo(){
+	return this->primo;
+}
+
+void MenuPrimo::set_primo(Primo const p){
+	this->primo = p;
+}
+
+Dessert MenuPrimo::get_dessert() {
+	return this->dessert;
+}
+
+void MenuPrimo::set_dessert(Dessert const d){
+	this->dessert = d;
+}
+
+Caffe MenuPrimo::get_caffe(){
+	return this->caffe;
+}
+
+void MenuPrimo::set_caffe(Caffe const c){
+	this->caffe = c;
+}
+
 string MenuPrimo::get_string_primo_from_enum(Primo const p){
 	if(p==Primo::pizza){
 		return "Pizza";
@@ -82,12 +106,11 @@ string MenuPrimo::get_string_caffe_from_enum(Caffe const c){
 string MenuPrimo::get_string(){
 	stringstream streamer;
 
-	streamer << Menu::get_string() <<endl;
+	streamer << Menu::get_string() << endl;
 
-	streamer << "Primo: " << MenuPrimo::get_string_primo_from_enum(this->primo);
-	streamer << "Dessert: " << MenuPrimo::get_string_dessert_from_enum(this->dessert);
-	streamer << "Primo: " << MenuPrimo::get_string_caffe_from_enum(this->caffe);
-	streamer << endl;
+	streamer << "Primo: " << MenuPrimo::get_string_primo_from_enum(this->primo) << endl;
+	streamer << "Dessert: " << MenuPrimo::get_string_dessert_from_enum(this->dessert) << endl;
+	streamer << "Caffe: " << MenuPrimo::get_string_caffe_from_enum(this->caffe) << endl;
 
 	return streamer.str();
 }
