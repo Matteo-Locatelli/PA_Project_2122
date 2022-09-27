@@ -9,12 +9,21 @@
 #include <string>
 #include <list>
 #include <iostream>
+#include <memory>
 
 #include "Stampe.h"
 
 using namespace std;
 
-void stampa_menu() {
+void stampa_menu(menu_ref menu){
+	cout << menu->get_string() <<endl;
+}
+
+void stampa_utente(utente_ref utente){
+	cout << utente->get_string() <<endl;
+}
+
+void stampa_scelte_menu() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 	cout << "Menu disponibili: " << endl;
 	cout << "Menu primo: primo a scelta + dessert/frutta a scelta + caffe -> 10€" << endl;
@@ -23,7 +32,7 @@ void stampa_menu() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 }
 
-void stampa_menu_primo() {
+void stampa_scelte_menu_primo() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 	cout << "Dettaglio menu primo a 10€: " << endl;
 	cout << "Primo a scelta tra: pizza, lasagne, pasta, riso" << endl;
@@ -32,7 +41,7 @@ void stampa_menu_primo() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 }
 
-void stampa_menu_secondo() {
+void stampa_scelte_menu_secondo() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 	cout << "Dettaglio menu secondo a 10€: " << endl;
 	cout << "Secondo a scelta tra: pollo, bistecca, branzino" << endl;
@@ -41,7 +50,7 @@ void stampa_menu_secondo() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 }
 
-void stampa_menu_completo() {
+void stampa_scelte_menu_completo() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 	cout << "Dettaglio menu completo 15€: " << endl;
 	cout << "Primo a scelta tra: pizza, lasagne, pasta, riso" << endl;

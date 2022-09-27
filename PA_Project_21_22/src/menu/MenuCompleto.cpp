@@ -32,6 +32,15 @@ MenuCompleto::MenuCompleto(menu_ref menu,
 										MenuSecondo::MenuSecondo(menu, secondo, contorno, caffe){
 }
 
+Caffe MenuCompleto::get_caffe(){
+	return this->MenuPrimo::get_caffe();
+}
+
+void MenuCompleto::set_caffe(Caffe const c){
+	this->MenuPrimo::set_caffe(c);
+	this->MenuSecondo::set_caffe(c);
+}
+
 string MenuCompleto::get_string(){
 	stringstream streamer;
 

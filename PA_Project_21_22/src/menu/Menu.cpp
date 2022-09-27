@@ -76,6 +76,7 @@ string Menu::get_string_orario_from_enum(Orario const o) {
 }
 
 string Menu::get_string(){
+	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 	stringstream streamer;
 	streamer << "Menu di " << this->u->get_string();
 

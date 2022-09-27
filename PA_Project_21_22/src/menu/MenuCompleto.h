@@ -34,6 +34,10 @@ public:
 	MenuCompleto(menu_ref menu,
 			Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe);
 
+	virtual Caffe get_caffe();
+
+	virtual void set_caffe(Caffe const c);
+
 	virtual string get_string();
 
 	~MenuCompleto();

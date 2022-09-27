@@ -30,6 +30,7 @@ int main() {
 			cout << "1 - Stampa la lista dei menu primo" << endl;
 			cout << "2 - Stampa la lista dei menu secondo" << endl;
 			cout << "3 - Stampa la lista dei menu completi" << endl;
+			cout << "4 - Crea il tuo menu" << endl;
 			//scelta = 1; //Test
 			getline(cin, line);
 			scelta = stoi(line);
@@ -48,6 +49,9 @@ int main() {
 				break;
 			case 3:
 				gestore->stampa_opzioni_menu_completo();
+				break;
+			case 4:
+				gestore->nuovo_menu();
 				break;
 			default:
 				cout << "Scelta non valida!" << endl;

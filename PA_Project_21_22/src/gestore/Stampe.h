@@ -11,14 +11,29 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <memory>
 
-void stampa_menu();
+#include "../menu/Menu.h"
+#include "../menu/MenuPrimo.h"
+#include "../menu/MenuSecondo.h"
+#include "../menu/MenuCompleto.h"
+#include "../utente/Utente.h"
+#include "../utente/Studente.h"
+#include "../utente/Professore.h"
 
-void stampa_menu_primo();
+using namespace std;
 
-void stampa_menu_secondo();
+void stampa_menu(menu_ref menu);
 
-void stampa_menu_completo();
+void stampa_utente(utente_ref utente);
+
+void stampa_scelte_menu();
+
+void stampa_scelte_menu_primo();
+
+void stampa_scelte_menu_secondo();
+
+void stampa_scelte_menu_completo();
 
 void stampa_errore();
 

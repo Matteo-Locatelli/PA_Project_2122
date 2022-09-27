@@ -10,11 +10,16 @@
 
 #include <vector>
 #include <string>
+#include <memory>
 
 #include "../menu/Menu.h"
 #include "../menu/MenuCompleto.h"
 #include "../menu/MenuPrimo.h"
 #include "../menu/MenuSecondo.h"
+
+#include "../utente/Utente.h"
+#include "../utente/Studente.h"
+#include "../utente/Professore.h"
 
 class Gestore {
 
@@ -22,15 +27,33 @@ private:
 
 	void init();
 
+	menu_ref crea_menu();
+
+	vector <studente_ref> lista_studenti;
+
+	vector <professore_ref> lista_professori;
+
+	vector <menu_primo_ref> lista_menu_primo;
+
+	vector <menu_secondo_ref> lista_menu_secondo;
+
+	vector <menu_completo_ref> lista_menu_completo;
+
 public:
 
 	Gestore();
+
+	void nuovo_menu();
 
 	void nuovo_menu_primo();
 
 	void nuovo_menu_secondo();
 
 	void nuovo_menu_completo();
+
+	studente_ref registra_nuovo_studente();
+
+	professore_ref registra_nuovo_professore();
 
 	void stampa_lista_menu();
 
@@ -47,6 +70,10 @@ public:
 	void stampa_opzioni_menu_secondo();
 
 	void stampa_opzioni_menu_completo();
+
+	void stampa_studenti();
+
+	void stampa_professori();
 
 	~Gestore();
 };
