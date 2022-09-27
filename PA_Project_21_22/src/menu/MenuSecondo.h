@@ -52,6 +52,12 @@ public:
 
 	virtual void set_caffe(Caffe const c);
 
+	static Secondo get_secondo_from_int(int s);
+
+	static Contorno get_contorno_from_int(int c);
+
+	static Caffe get_caffe_from_int(int c);
+
 	string get_string_secondo_from_enum(Secondo const c);
 
 	string get_string_contorno_from_enum(Contorno const n);

@@ -26,11 +26,70 @@ Gestore::Gestore(){
 }
 
 void Gestore::init(){
+	//init studenti
+	lista_studenti.push_back(make_shared<Studente>("Mario", "Rossi"));
+	lista_studenti.push_back(make_shared<Studente>("Giuseppe", "Bianchi"));
+	lista_studenti.push_back(make_shared<Studente>("Matteo", "Locatelli"));
 
+	//init professori
+	professore_ref t1(new Professore("Angelo", "Gargantini"));
+	lista_professori.push_back(t1);
+	lista_professori.push_back(make_shared<Professore>("Pluto", "Plutone"));
+	lista_professori.push_back(make_shared<Professore>("Pippo", "Plutone"));
+
+	//init menu
+	lista_menu_primo.push_back(make_shared<MenuPrimo>(lista_studenti.at(0), 10, time(0),
+			Menu::get_orario_from_int(0), MenuPrimo::get_primo_from_int(0),
+			MenuPrimo::get_dessert_from_int(0), MenuPrimo::get_caffe_from_int(0)));
+	lista_menu_secondo.push_back(make_shared<MenuSecondo>(lista_studenti.at(1), 10, time(0)+100000,
+			Menu::get_orario_from_int(0), MenuSecondo::get_secondo_from_int(0),
+			MenuSecondo::get_contorno_from_int(0), MenuSecondo::get_caffe_from_int(0)));
+	lista_menu_completo.push_back(make_shared<MenuCompleto>(lista_studenti.at(2), 15, time(0)+200000,
+			Menu::get_orario_from_int(1), MenuPrimo::get_primo_from_int(1), MenuSecondo::get_secondo_from_int(1),
+			MenuSecondo::get_contorno_from_int(1), MenuPrimo::get_dessert_from_int(1), MenuPrimo::get_caffe_from_int(1)));
 }
 
-void Gestore::nuovo_menu(){
 
+/*
+ * Metodi per creare nuovi menu
+ */
+
+void Gestore::nuovo_menu(){
+	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
+	cout << "Sei nella sezione per scegliere il tuo menu! " << endl;
+	cout << "Premi invio per procedere e '!' per annullare." << endl;
+	cin.ignore();
+	string line;
+	int scelta = -1;
+	while(scelta == -1){
+		cout << "Scegli il tipo di menu" << endl;
+		cout << "0 - Menu primo" << endl;
+		cout << "1 - Menu secondo" << endl;
+		cout << "2 - Menu completo" << endl;
+		cout << "3 - Annulla scelta" << endl;
+		getline(cin, line);
+		if(line == "\0"){
+			scelta = -1;
+			continue;
+		}
+		scelta = stoi(line);
+		switch(scelta){
+		case 0:
+			nuovo_menu_primo();
+			break;
+		case 1:
+			nuovo_menu_secondo();
+			break;
+		case 2:
+			nuovo_menu_completo();
+			break;
+		case 3:
+			return;
+		default:
+			cout << "Scelta non valida." << endl;
+			scelta = -1;
+		}
+	}
 }
 
 void Gestore::nuovo_menu_primo(){

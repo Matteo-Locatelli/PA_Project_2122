@@ -51,6 +51,8 @@ public:
 
 	virtual string get_string_orario_from_enum(Orario const o);
 
+	static Orario get_orario_from_int(int o);
+
 	virtual string get_string();
 
 	virtual ~Menu();

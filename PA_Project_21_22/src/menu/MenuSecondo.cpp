@@ -67,6 +67,34 @@ void MenuSecondo::set_caffe(Caffe const c){
 	this->caffe = c;
 }
 
+Secondo MenuSecondo::get_secondo_from_int(int s){
+	if (s==0) {
+		return Secondo::pollo;
+	} else if (s==1) {
+		return Secondo::bistecca;
+	} else {
+		return Secondo::branzino;
+	}
+}
+
+Contorno MenuSecondo::get_contorno_from_int(int c){
+	if (c==0) {
+		return Contorno::insalata;
+	} else if (c==1) {
+		return Contorno::patate;
+	} else {
+		return Contorno::legumi;
+	}
+}
+
+Caffe MenuSecondo::get_caffe_from_int(int c){
+	if (c==0) {
+		return Caffe::no;
+	} else {
+		return Caffe::si;
+	}
+}
+
 string MenuSecondo::get_string_secondo_from_enum(Secondo const s){
 	if(s==Secondo::pollo){
 		return "Pollo";

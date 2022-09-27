@@ -31,7 +31,7 @@ enum Caffe : int{
 };
 
 MenuPrimo::MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe):
-								Menu::Menu(u, prezzo, data, o){
+												Menu::Menu(u, prezzo, data, o){
 	this->primo = primo;
 	this->dessert = dessert;
 	this->caffe = caffe;
@@ -65,6 +65,36 @@ Caffe MenuPrimo::get_caffe(){
 
 void MenuPrimo::set_caffe(Caffe const c){
 	this->caffe = c;
+}
+
+Primo MenuPrimo::get_primo_from_int(int p){
+	if (p==0) {
+		return Primo::pizza;
+	} else if (p==1) {
+		return Primo::lasagne;
+	} else if (p==2) {
+		return Primo::pasta;
+	} else {
+		return Primo::riso;
+	}
+}
+
+Dessert MenuPrimo::get_dessert_from_int(int d){
+	if (d==0) {
+		return Dessert::tiramisu;
+	} else if (d==1) {
+		return Dessert::cheesecake;
+	} else {
+		return Dessert::frutta;
+	}
+}
+
+Caffe MenuPrimo::get_caffe_from_int(int c){
+	if (c==0) {
+		return Caffe::no;
+	} else {
+		return Caffe::si;
+	}
 }
 
 string MenuPrimo::get_string_primo_from_enum(Primo const p){
