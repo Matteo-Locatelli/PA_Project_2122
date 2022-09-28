@@ -54,7 +54,7 @@ void Utente::set_cognome(string const cognome)
 
 string Utente::get_string(){
 	stringstream streamer;
-	streamer << "Nome: " << nome << " Cognome: " << cognome <<endl;
+	streamer << " -> Nome: " << nome << ", Cognome: " << cognome <<endl;
 	return streamer.str();
 }
 

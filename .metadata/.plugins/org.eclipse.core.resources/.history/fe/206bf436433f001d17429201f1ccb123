@@ -150,7 +150,7 @@ void Gestore::stampa_lista_menu(){
 
 void Gestore::stampa_lista_menu_primo(){
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
-	cout << "Lista menu primo: " << endl;
+	cout << "Menu primo: " << endl;
 	for(auto& el: lista_menu_primo){
 		stampa_menu(el);
 	}
@@ -159,7 +159,7 @@ void Gestore::stampa_lista_menu_primo(){
 
 void Gestore::stampa_lista_menu_secondo(){
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
-	cout << "Lista menu secondo: " << endl;
+	cout << "Menu secondo: " << endl;
 	for(auto& el: lista_menu_secondo){
 		stampa_menu(el);
 	}
@@ -168,7 +168,7 @@ void Gestore::stampa_lista_menu_secondo(){
 
 void Gestore::stampa_lista_menu_completo(){
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
-	cout << "Lista menu completo: " << endl;
+	cout << "Menu completo: " << endl;
 	for(auto& el: lista_menu_completo){
 		stampa_menu(el);
 	}

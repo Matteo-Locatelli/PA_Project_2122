@@ -28,8 +28,7 @@ int main() {
 			cout << "Seleziona l'operazione che vuoi svolgere dal menu:" << endl;
 			cout << "0 - Crea il tuo menu" << endl;
 			cout << "1 - Stampa la lista delle opzioni dei menu " << endl;
-			cout << "2 - Stampa la lista degli utenti " << endl;
-			cout << "3 - Stampa la lista dei menu " << endl;
+			cout << "2 - Stampa la lista dei menu " << endl;
 			getline(cin, line);
 			scelta = stoi(line);
 			if (scelta == -1) {
@@ -43,9 +42,6 @@ int main() {
 				gestore->stampa_opzioni_menu();
 				break;
 			case 2:
-				gestore->stampa_utenti();
-				break;
-			case 3:
 				gestore->stampa_lista_menu();
 				break;
 			default:

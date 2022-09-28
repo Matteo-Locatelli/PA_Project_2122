@@ -16,11 +16,11 @@
 using namespace std;
 
 void stampa_menu(menu_ref menu){
-	cout << menu->get_string();
+	cout << menu->get_string() <<endl;
 }
 
 void stampa_utente(utente_ref utente){
-	cout << utente->get_string();
+	cout << utente->get_string() <<endl;
 }
 
 void stampa_scelte_menu() {

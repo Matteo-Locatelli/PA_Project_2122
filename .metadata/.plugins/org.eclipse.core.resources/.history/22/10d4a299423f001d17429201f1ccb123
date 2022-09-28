@@ -26,10 +26,12 @@ int main() {
 	try {
 		while (true) {
 			cout << "Seleziona l'operazione che vuoi svolgere dal menu:" << endl;
-			cout << "0 - Crea il tuo menu" << endl;
-			cout << "1 - Stampa la lista delle opzioni dei menu " << endl;
-			cout << "2 - Stampa la lista degli utenti " << endl;
-			cout << "3 - Stampa la lista dei menu " << endl;
+			cout << "0 - Stampa la lista dei possibili menu" << endl;
+			cout << "1 - Stampa la lista dei menu primo" << endl;
+			cout << "2 - Stampa la lista dei menu secondo" << endl;
+			cout << "3 - Stampa la lista dei menu completi" << endl;
+			cout << "4 - Crea il tuo menu" << endl;
+			//scelta = 1; //Test
 			getline(cin, line);
 			scelta = stoi(line);
 			if (scelta == -1) {
@@ -37,16 +39,19 @@ int main() {
 			}
 			switch (scelta) {
 			case 0:
-				gestore->nuovo_menu();
-				break;
-			case 1:
 				gestore->stampa_opzioni_menu();
 				break;
+			case 1:
+				gestore->stampa_opzioni_menu_primo();
+				break;
 			case 2:
-				gestore->stampa_utenti();
+				gestore->stampa_opzioni_menu_secondo();
 				break;
 			case 3:
-				gestore->stampa_lista_menu();
+				gestore->stampa_opzioni_menu_completo();
+				break;
+			case 4:
+				gestore->nuovo_menu();
 				break;
 			default:
 				cout << "Scelta non valida!" << endl;

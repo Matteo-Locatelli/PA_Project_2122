@@ -71,8 +71,6 @@ public:
 
 	void stampa_opzioni_menu_completo();
 
-	void stampa_utenti();
-
 	void stampa_studenti();
 
 	void stampa_professori();
