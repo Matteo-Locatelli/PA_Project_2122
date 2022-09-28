@@ -25,7 +25,7 @@ int main() {
 	cout << "Digita -1 per terminare il programma." << endl;
 	try {
 		while (true) {
-			cout << "Seleziona l'operazione che vuoi svolgere dal menu:" << endl;
+			cout << "Seleziona l'operazione che vuoi svolgere dal menu (-1 termina):" << endl;
 			cout << "0 - Crea il tuo menu" << endl;
 			cout << "1 - Stampa la lista delle opzioni dei menu " << endl;
 			cout << "2 - Stampa la lista degli utenti " << endl;

@@ -37,7 +37,7 @@ string Studente::get_string(){
 }
 
 Studente::~Studente(){
-	cout << "Elimino studente " << codice_studente << " " << Utente::get_string() <<endl;
+	cout << "Elimino studente " << codice_studente << " " << Utente::get_string();
 }
 
 

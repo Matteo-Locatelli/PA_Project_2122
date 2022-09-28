@@ -107,7 +107,7 @@ string Menu::get_string(){
 }
 
 Menu::~Menu(){
-	cout << "Elimino menu" <<endl;
+	cout << "Elimino menu" <<endl <<endl;
 }
 
 

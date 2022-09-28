@@ -37,7 +37,7 @@ string Professore::get_string(){
 }
 
 Professore::~Professore(){
-	cout << "Elimino professore " << codice_professore << " " << Utente::get_string() <<endl;
+	cout << "Elimino professore " << codice_professore << " " << Utente::get_string();
 }
 
 
