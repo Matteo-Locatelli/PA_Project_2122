@@ -27,12 +27,18 @@
 using namespace std;
 
 class MenuCompleto : public MenuPrimo, public MenuSecondo {
+
+private:
+	static const int prezzo_menu_completo = 15;
+
 public:
 	MenuCompleto(utente_ref u, int prezzo , time_t data, Orario o,
 			Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe);
 
 	MenuCompleto(menu_ref menu,
 			Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe);
+
+	static int get_prezzo();
 
 	virtual Caffe get_caffe();
 

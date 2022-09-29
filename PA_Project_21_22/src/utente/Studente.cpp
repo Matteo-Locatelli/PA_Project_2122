@@ -20,6 +20,8 @@ using namespace std;
 
 unsigned int  Studente::num_studenti = 0;
 
+const string STUDENTE_PREFIX = "S";
+
 Studente::Studente(string nome, string cognome) : Utente(nome, cognome){
 	num_studenti++;
 	codice_studente = STUDENTE_PREFIX + to_string(Utente::get_codice());

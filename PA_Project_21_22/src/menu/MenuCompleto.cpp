@@ -18,6 +18,8 @@
 
 using namespace std;
 
+const int prezzo_menu_completo = 15;
+
 MenuCompleto::MenuCompleto(utente_ref u, int prezzo , time_t data, Orario o,
 		Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe) :
 										Menu::Menu(u, prezzo, data, o),
@@ -30,6 +32,10 @@ MenuCompleto::MenuCompleto(menu_ref menu,
 										Menu::Menu(*menu),
 										MenuPrimo::MenuPrimo(menu, primo, dessert, caffe),
 										MenuSecondo::MenuSecondo(menu, secondo, contorno, caffe){
+}
+
+int MenuCompleto::get_prezzo(){
+	return prezzo_menu_completo;
 }
 
 Caffe MenuCompleto::get_caffe(){

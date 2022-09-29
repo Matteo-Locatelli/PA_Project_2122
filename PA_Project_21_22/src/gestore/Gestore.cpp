@@ -51,13 +51,13 @@ void Gestore::init(){
 	lista_utenti.push_back(make_shared<Professore>("Pippo", "Plutone"));
 
 	//init menu
-	lista_menu_primo.push_back(make_shared<MenuPrimo>(lista_utenti.at(0), 10, time(0),
+	lista_menu_primo.push_back(make_shared<MenuPrimo>(lista_utenti.at(0), MenuPrimo::get_prezzo(), time(0),
 			Menu::get_orario_from_int(0), MenuPrimo::get_primo_from_int(0),
 			MenuPrimo::get_dessert_from_int(0), MenuPrimo::get_caffe_from_int(0)));
-	lista_menu_secondo.push_back(make_shared<MenuSecondo>(lista_utenti.at(1), 10, time(0)+100000,
+	lista_menu_secondo.push_back(make_shared<MenuSecondo>(lista_utenti.at(1), MenuSecondo::get_prezzo(), time(0)+100000,
 			Menu::get_orario_from_int(0), MenuSecondo::get_secondo_from_int(0),
 			MenuSecondo::get_contorno_from_int(0), MenuSecondo::get_caffe_from_int(0)));
-	lista_menu_completo.push_back(make_shared<MenuCompleto>(lista_utenti.at(2), 15, time(0)+200000,
+	lista_menu_completo.push_back(make_shared<MenuCompleto>(lista_utenti.at(2), MenuCompleto::get_prezzo(), time(0)+200000,
 			Menu::get_orario_from_int(1), MenuPrimo::get_primo_from_int(1), MenuSecondo::get_secondo_from_int(1),
 			MenuSecondo::get_contorno_from_int(1), MenuPrimo::get_dessert_from_int(1), MenuPrimo::get_caffe_from_int(1)));
 }

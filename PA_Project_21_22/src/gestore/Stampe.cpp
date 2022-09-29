@@ -26,15 +26,15 @@ void stampa_utente(utente_ref utente){
 void stampa_scelte_menu() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 	cout << "Menu disponibili: " << endl;
-	cout << "Menu primo: primo a scelta + dessert/frutta a scelta + caffe -> 10€" << endl;
-	cout << "Menu secondo: secondo a scelta + contorno a scelta + caffe -> 10€" << endl;
-	cout << "Menu completo: primo a scelta + secondo a scelta + contorno a scelta + dessert/frutta + caffe -> 15€" << endl;
+	cout << "Menu primo: primo a scelta + dessert/frutta a scelta + caffe -> " << MenuPrimo::get_prezzo() << "€" << endl;
+	cout << "Menu secondo: secondo a scelta + contorno a scelta + caffe -> " << MenuSecondo::get_prezzo() << "€" << endl;
+	cout << "Menu completo: primo a scelta + secondo a scelta + contorno a scelta + dessert/frutta + caffe -> " << MenuCompleto::get_prezzo() << "€" << endl;
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 }
 
 void stampa_scelte_menu_primo() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
-	cout << "Dettaglio menu primo a 10€: " << endl;
+	cout << "Dettaglio menu primo a " << MenuPrimo::get_prezzo() << "€" << endl;
 	cout << "Primo a scelta tra: pizza, lasagne, pasta, riso" << endl;
 	cout << "Dessert a scelta tra: tiramisu, cheesecake, frutta" << endl;
 	cout << "Caffe" << endl;
@@ -43,7 +43,7 @@ void stampa_scelte_menu_primo() {
 
 void stampa_scelte_menu_secondo() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
-	cout << "Dettaglio menu secondo a 10€: " << endl;
+	cout << "Dettaglio menu secondo a " << MenuSecondo::get_prezzo() << "€" << endl;
 	cout << "Secondo a scelta tra: pollo, bistecca, branzino" << endl;
 	cout << "Contorno a scelta tra: insalata, patate, legumi" << endl;
 	cout << "Caffe" << endl;
@@ -52,7 +52,7 @@ void stampa_scelte_menu_secondo() {
 
 void stampa_scelte_menu_completo() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
-	cout << "Dettaglio menu completo 15€: " << endl;
+	cout << "Dettaglio menu completo a " << MenuCompleto::get_prezzo() << "€" << endl;
 	cout << "Primo a scelta tra: pizza, lasagne, pasta, riso" << endl;
 	cout << "Secondo a scelta tra: pollo, bistecca, branzino" << endl;
 	cout << "Contorno a scelta tra: insalata, patate, legumi" << endl;

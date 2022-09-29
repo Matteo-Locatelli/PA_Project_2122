@@ -34,11 +34,14 @@ private:
 	Primo primo;
 	Dessert dessert;
 	Caffe caffe;
+	static const int prezzo_menu_primo = 10;
 
 public:
 	MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
 
 	MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe);
+
+	static int get_prezzo();
 
 	virtual Primo get_primo();
 

@@ -21,8 +21,6 @@
 
 using namespace std;
 
-const string STUDENTE_PREFIX = "S";
-
 class Studente : public Utente
 {
 private:

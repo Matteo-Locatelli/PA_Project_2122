@@ -7162,3 +7162,264 @@ g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" 
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
 g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+17:30:00 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+..\src\utente\Studente.cpp:23:8: error: conflicting declaration 'std::__cxx11::string STUDENTE_PREFIX'
+ string STUDENTE_PREFIX = "S";
+        ^~~~~~~~~~~~~~~
+In file included from ..\src\utente\Studente.cpp:17:0:
+..\src\utente\Studente.h:24:14: note: previous declaration as 'const string STUDENTE_PREFIX'
+ const string STUDENTE_PREFIX;
+              ^~~~~~~~~~~~~~~
+17:30:26 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+17:31:37 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+17:32:27 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+..\src\utente\Professore.cpp:23:13: error: 'PROFESSORE_PREFIX' in 'class Professore' does not name a type
+ Professore::PROFESSORE_PREFIX = "T";
+             ^~~~~~~~~~~~~~~~~
+17:32:35 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+..\src\utente\Professore.cpp:23:1: error: 'PROFESSORE_PREFIX' does not name a type
+ PROFESSORE_PREFIX = "T";
+ ^~~~~~~~~~~~~~~~~
+17:32:53 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22
+17:35:00 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp:33:1: error: expected unqualified-id before 'public'
+ public final int prezzo_menu_primo = 10;
+ ^~~~~~
+17:35:17 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp:33:1: error: 'final' does not name a type
+ final public int prezzo_menu_primo = 10;
+ ^~~~~
+17:35:37 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp:33:1: error: 'final' does not name a type
+ final int prezzo_menu_primo = 10;
+ ^~~~~
+17:37:26 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+17:37:38 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+..\src\menu\MenuPrimo.cpp:33:8: error: 'final' does not name a type
+ static final int prezzo_menu_primo = 10;
+        ^~~~~
+17:37:46 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+17:43:55 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+src\menu\MenuCompleto.o:MenuCompleto.cpp:(.rdata$_ZTV12MenuCompleto[__ZTV12MenuCompleto]+0xc): undefined reference to `MenuPrimo::get_prezzo()'
+src\menu\MenuCompleto.o:MenuCompleto.cpp:(.rdata$_ZTV12MenuCompleto[__ZTV12MenuCompleto]+0x9c): undefined reference to `virtual thunk to MenuPrimo::get_prezzo()'
+src\menu\MenuCompleto.o:MenuCompleto.cpp:(.rdata$_ZTC12MenuCompleto0_9MenuPrimo[__ZTC12MenuCompleto0_9MenuPrimo]+0xc): undefined reference to `MenuPrimo::get_prezzo()'
+src\menu\MenuCompleto.o:MenuCompleto.cpp:(.rdata$_ZTC12MenuCompleto0_9MenuPrimo[__ZTC12MenuCompleto0_9MenuPrimo]+0x6c): undefined reference to `virtual thunk to MenuPrimo::get_prezzo()'
+src\menu\MenuPrimo.o: In function `ZN9MenuPrimoC1ESt10shared_ptrI6UtenteEil6Orario5Primo7Dessert5Caffe':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:34: undefined reference to `vtable for MenuPrimo'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:34: undefined reference to `vtable for MenuPrimo'
+src\menu\MenuPrimo.o: In function `ZN9MenuPrimoC1ESt10shared_ptrI4MenuE5Primo7Dessert5Caffe':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:40: undefined reference to `vtable for MenuPrimo'
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:40: undefined reference to `vtable for MenuPrimo'
+src\menu\MenuPrimo.o: In function `ZN9MenuPrimoD1Ev':
+C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:148: undefined reference to `vtable for MenuPrimo'
+src\menu\MenuPrimo.o:C:\Scuola\unibg\magistrale\I anno\I semestre\PA - programmazione avanzata\PA_Project_2122\PA_Project_21_22\Debug/../src/menu/MenuPrimo.cpp:148: more undefined references to `vtable for MenuPrimo' follow
+collect2.exe: error: ld returned 1 exit status
+17:45:12 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+17:46:49 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:8:
+..\src\gestore\../menu/MenuCompleto.h:29:7: error: no unique final overrider for 'virtual int Menu::get_prezzo()' in 'MenuCompleto'
+ class MenuCompleto : public MenuPrimo, public MenuSecondo {
+       ^~~~~~~~~~~~
+17:48:15 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+17:50:35 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+..\src\gestore\Stampe.cpp: In function 'void stampa_scelte_menu()':
+..\src\gestore\Stampe.cpp:29:102: error: cannot call member function 'virtual int MenuPrimo::get_prezzo()' without object
+  cout << "Menu primo: primo a scelta + dessert/frutta a scelta + caffe -> " << MenuPrimo::get_prezzo() << "€" << endl;
+                                                                                                      ^
+17:53:14 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+..\src\gestore\Stampe.cpp: In function 'void stampa_scelte_menu()':
+..\src\gestore\Stampe.cpp:29:92: error: expected unqualified-id before '<<' token
+  cout << "Menu primo: primo a scelta + dessert/frutta a scelta + caffe -> " << MenuPrimo:: << "€" << endl;
+                                                                                            ^~
+17:54:25 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:17:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuPrimo.h:44:32: error: member 'get_prezzo' cannot be declared both 'virtual' and 'static'
+  virtual static int get_prezzo();
+                                ^
+..\src\gestore\Stampe.cpp: In function 'void stampa_scelte_menu()':
+..\src\gestore\Stampe.cpp:29:92: error: expected unqualified-id before '<<' token
+  cout << "Menu primo: primo a scelta + dessert/frutta a scelta + caffe -> " << MenuPrimo:: << "€" << endl;
+                                                                                            ^~
+17:56:11 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:17:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuPrimo.h:44:13: error: 'static int MenuPrimo::get_prezzo()' cannot be declared
+  static int get_prezzo();
+             ^~~~~~~~~~
+In file included from ..\src\gestore\Stampe.h:16:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/Menu.h:44:14: error:   since 'virtual int Menu::get_prezzo()' declared in base class
+  virtual int get_prezzo();
+              ^~~~~~~~~~
+In file included from ..\src\gestore\Stampe.h:18:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuSecondo.h:44:13: error: 'static int MenuSecondo::get_prezzo()' cannot be declared
+  static int get_prezzo();
+             ^~~~~~~~~~
+In file included from ..\src\gestore\Stampe.h:16:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/Menu.h:44:14: error:   since 'virtual int Menu::get_prezzo()' declared in base class
+  virtual int get_prezzo();
+              ^~~~~~~~~~
+In file included from ..\src\gestore\Stampe.h:19:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuCompleto.h:41:13: error: 'static int MenuCompleto::get_prezzo()' cannot be declared
+  static int get_prezzo();
+             ^~~~~~~~~~
+In file included from ..\src\gestore\Stampe.h:16:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/Menu.h:44:14: error:   since 'virtual int Menu::get_prezzo()' declared in base class
+  virtual int get_prezzo();
+              ^~~~~~~~~~
+In file included from ..\src\gestore\Stampe.h:19:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuCompleto.h:41:13: error: 'static int MenuCompleto::get_prezzo()' cannot be declared
+  static int get_prezzo();
+             ^~~~~~~~~~
+In file included from ..\src\gestore\Stampe.h:16:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/Menu.h:44:14: error:   since 'virtual int Menu::get_prezzo()' declared in base class
+  virtual int get_prezzo();
+              ^~~~~~~~~~
+17:56:59 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp: In static member function 'static int Menu::get_prezzo()':
+..\src\menu\Menu.cpp:49:9: error: 'this' is unavailable for static member functions
+  return this->prezzo;
+         ^~~~
+17:57:12 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+..\src\menu\Menu.cpp: In static member function 'static int Menu::get_prezzo()':
+..\src\menu\Menu.cpp:49:9: error: invalid use of member 'Menu::prezzo' in static member function
+  return prezzo;
+         ^~~~~~
+In file included from ..\src\menu\Menu.cpp:18:0:
+..\src\menu\Menu.h:31:6: note: declared here
+  int prezzo;
+      ^~~~~~
+17:57:36 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+17:58:08 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+18:00:37 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+18:01:59 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22

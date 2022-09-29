@@ -34,11 +34,14 @@ private:
 	Secondo secondo;
 	Contorno contorno;
 	Caffe caffe;
+	static const int prezzo_menu_secondo = 10;
 
 public:
 	MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
 
 	MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caffe caffe);
+
+	static int get_prezzo();
 
 	virtual Secondo get_secondo();
 

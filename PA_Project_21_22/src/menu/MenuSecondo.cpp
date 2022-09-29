@@ -43,6 +43,10 @@ MenuSecondo::MenuSecondo(menu_ref menu, Secondo secondo, Contorno contorno, Caff
 	this->caffe = caffe;
 }
 
+int MenuSecondo::get_prezzo(){
+	return prezzo_menu_secondo;
+}
+
 Secondo MenuSecondo::get_secondo(){
 	return this->secondo;
 }

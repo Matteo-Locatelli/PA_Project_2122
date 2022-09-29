@@ -41,6 +41,8 @@ public:
 
 	virtual void set_utente(utente_ref const utente);
 
+	int get_prezzo();
+
 	virtual time_t get_data();
 
 	virtual void set_data(time_t const data);

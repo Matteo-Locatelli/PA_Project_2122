@@ -43,6 +43,10 @@ MenuPrimo::MenuPrimo(menu_ref menu, Primo primo, Dessert dessert, Caffe caffe) :
 	this->caffe = caffe;
 }
 
+int MenuPrimo::get_prezzo(){
+	return prezzo_menu_primo;
+}
+
 Primo MenuPrimo::get_primo(){
 	return this->primo;
 }
