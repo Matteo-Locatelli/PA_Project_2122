@@ -51,7 +51,7 @@ public:
 
 	virtual void set_ora(Orario const o);
 
-	virtual string get_string_orario_from_enum(Orario const o);
+	static string get_string_orario_from_enum(Orario const o);
 
 	static Orario get_orario_from_int(int o);
 

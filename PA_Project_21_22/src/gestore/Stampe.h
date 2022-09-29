@@ -39,4 +39,6 @@ void stampa_errore();
 
 void stampa_errore_data_passata();
 
+void stampa_errore_inserimento_data();
+
 #endif /* GESTORE_STAMPE_H_ */

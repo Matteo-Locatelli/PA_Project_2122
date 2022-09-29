@@ -70,7 +70,7 @@ void Gestore::init(){
 void Gestore::nuovo_menu(){
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 	cout << "Sei nella sezione per scegliere il tuo menu! " << endl;
-	cout << "Premi invio per procedere e '!' per annullare." << endl;
+	cout << "Premi invio per procedere. " << endl;
 	cin.ignore();
 	string line;
 	int scelta = -1;
@@ -109,18 +109,30 @@ void Gestore::nuovo_menu(){
 void Gestore::nuovo_menu_primo(){
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 	cout << "Selezione di un nuovo menu primo " << endl;
-	utente_ref utente = utente_scelto();	// selezione dell'utente
-	if (utente == nullptr) {
+	// selezione dell'utente
+	utente_ref utente_scelto = scelta_utente();
+	if (utente_scelto == nullptr) {
 		return;
 	}
+	// selezione data
+	time_t data_scelta = scelta_data();
+	if (data_scelta == 0) {
+		return;
+	}
+	// selezione dell'orario
+	int o = scelta_orario();
+	if (o == -1){
+		return;
+	}
+	Orario orario_scelto = Menu::get_orario_from_int(o);
 
 }
 
 void Gestore::nuovo_menu_secondo(){
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 	cout << "Selezione di un nuovo menu secondo " << endl;
-	utente_ref utente = utente_scelto();	// selezione dell'utente
-	if (utente == nullptr) {
+	utente_ref utente_scelto = scelta_utente();	// selezione dell'utente
+	if (utente_scelto == nullptr) {
 		return;
 	}
 }
@@ -128,17 +140,17 @@ void Gestore::nuovo_menu_secondo(){
 void Gestore::nuovo_menu_completo(){
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 	cout << "Selezione di un nuovo menu completo  " << endl;
-	utente_ref utente = utente_scelto();	// selezione dell'utente
-	if (utente == nullptr) {
+	utente_ref utente_scelto = scelta_utente();	// selezione dell'utente
+	if (utente_scelto == nullptr) {
 		return;
 	}
 }
 
-utente_ref Gestore::utente_scelto(){
+utente_ref Gestore::scelta_utente(){
 	int scelta = -2;
 	string line;
-	cout << "Sei nella sezione di scelta di un utente: " << endl;
-	cout << "Seleziona l'utente dalla lista oppure insersci '-1' per crearne uno nuovo: " << endl;
+	cout << "Sei nella sezione di scelta di un utente ('!' per terminare): " << endl;
+	cout << "Seleziona il numero dell'utente dalla lista oppure insersci '-1' per crearne uno nuovo: " << endl;
 	int index = 0;
 	for(auto& el: lista_utenti){
 		cout << index << " - " << el->get_string();
@@ -162,9 +174,88 @@ utente_ref Gestore::utente_scelto(){
 	return utente_scelto;
 }
 
+time_t Gestore::scelta_data(){	// return 0 per errore
+	string line;
+	int year, month, day;
+
+	time_t now = time(0);
+	tm* current_local_time = localtime(&now);
+	cout << "Inserisci anno: " << endl;
+	getline(cin, line);
+	if (line == "!" || line == "\0") {
+		return 0;
+	}
+	year = stoi(line);
+	if (year < current_local_time->tm_year + 1900) {
+		stampa_errore_data_passata();
+		return 0;
+	}
+	bool stesso_anno = year == current_local_time->tm_year + 1900;
+
+	cout << "Inserisci mese: " << endl;
+	getline(cin, line);
+	if (line == "!" || line == "\0") {
+		return 0;
+	}
+	month = stoi(line);
+	if (month< 1 || month>12){
+		stampa_errore_inserimento_data();
+		return 0;
+	}
+	if (month < current_local_time->tm_mon + 1 && stesso_anno) {
+		stampa_errore_data_passata();
+		return 0;
+	}
+	bool stesso_mese = month == current_local_time->tm_mon + 1;
+
+	cout << "Inserisci giorno: " << endl;
+	getline(cin, line);
+	if (line == "!" || line == "\0") {
+		return 0;
+	}
+	day = stoi(line);
+	if (day< 1 || day>31){
+		stampa_errore_inserimento_data();
+		return 0;
+	}
+	if (day <= current_local_time->tm_mday && stesso_mese && stesso_anno) {
+		stampa_errore_data_passata();
+		return 0;
+	}
+
+	time_t data;
+	time(&data);
+	tm* local_data_time = localtime(&data);
+	local_data_time->tm_year = year - 1900;
+	local_data_time->tm_mon = month - 1;
+	local_data_time->tm_mday = day;
+	local_data_time->tm_hour = 0;
+	local_data_time->tm_min = 0;
+	local_data_time->tm_sec = 0;
+	data = mktime(local_data_time);
+
+	return data;
+}
+
+int Gestore::scelta_orario(){
+	string line;
+	int orario_scelto = -1;
+	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
+	cout << "Sei nella sezione di scelta dell'orario ('!' per terminare): " << endl;
+	cout << "Seleziona l'orario del tuo pasto. " << endl;
+	for (int index = 0; index < 2; index++){
+		cout << index << " - " << Menu::get_string_orario_from_enum( Menu::get_orario_from_int(index) ) << endl;
+	}
+	getline(cin, line);
+	if (line == "!" || line == "\0") {
+		return -1;
+	}
+	return orario_scelto;
+}
+
 
 /*
- * Metodi per la creazione di nuovi studenti e professori
+ * Metodo per la creazione di nuovi studenti e professori
  */
 
 utente_ref Gestore::registra_nuovo_utente(){
@@ -180,7 +271,7 @@ utente_ref Gestore::registra_nuovo_utente(){
 	cout << "Selezionare il ruolo dell'utente: " << endl;
 	cout << " 0 - Studente " << endl;
 	cout << " 1 - Professore " << endl;
-	cout << " 2 - Reset " << endl;
+	cout << " ! - Reset " << endl;
 	getline(cin, line);
 	if (line == "!" || line == "\0") {
 		return nullptr;

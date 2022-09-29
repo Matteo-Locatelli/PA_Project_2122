@@ -55,7 +55,11 @@ public:
 
 	void nuovo_menu_completo();
 
-	utente_ref utente_scelto();
+	utente_ref scelta_utente();
+
+	time_t scelta_data();
+
+	int scelta_orario();	// return int e poi converto a orario durante la creazione del menu
 
 	utente_ref registra_nuovo_utente();
 

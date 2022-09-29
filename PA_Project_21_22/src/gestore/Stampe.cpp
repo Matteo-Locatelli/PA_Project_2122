@@ -75,4 +75,9 @@ void stampa_errore_data_passata() {
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
 }
 
+void stampa_errore_inserimento_data(){
+	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
+	cout << "Errore nell'inseriento della data " << endl;
+	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
+}
 
