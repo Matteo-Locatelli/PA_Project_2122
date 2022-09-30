@@ -18,7 +18,7 @@
 
 using namespace std;
 
-const int prezzo_menu_completo = 15;
+const int MenuCompleto::prezzo_menu_completo = 15;
 
 MenuCompleto::MenuCompleto(utente_ref u, int prezzo , time_t data, Orario o,
 		Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe) :

@@ -59,7 +59,17 @@ public:
 
 	time_t scelta_data();
 
-	int scelta_orario();	// return int e poi converto a orario durante la creazione del menu
+	int scelta_orario();	// scelte con return int e poi converto durante la creazione del menu
+
+	int scelta_primo();
+
+	int scelta_secondo();
+
+	int scelta_contorno();
+
+	int scelta_dessert();
+
+	int scelta_caffe();
 
 	utente_ref registra_nuovo_utente();
 

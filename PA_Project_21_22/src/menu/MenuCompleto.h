@@ -29,7 +29,7 @@ using namespace std;
 class MenuCompleto : public MenuPrimo, public MenuSecondo {
 
 private:
-	static const int prezzo_menu_completo = 15;
+	static const int prezzo_menu_completo;
 
 public:
 	MenuCompleto(utente_ref u, int prezzo , time_t data, Orario o,

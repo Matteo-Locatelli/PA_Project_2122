@@ -61,11 +61,11 @@ public:
 
 	static Caffe get_caffe_from_int(int c);
 
-	string get_string_secondo_from_enum(Secondo const c);
+	static string get_string_secondo_from_enum(Secondo const c);
 
-	string get_string_contorno_from_enum(Contorno const n);
+	static string get_string_contorno_from_enum(Contorno const n);
 
-	string get_string_caffe_from_enum(Caffe const c);
+	static string get_string_caffe_from_enum(Caffe const c);
 
 	virtual string get_string();
 

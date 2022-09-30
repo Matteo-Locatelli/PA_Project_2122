@@ -50,7 +50,7 @@ void Gestore::init(){
 	lista_utenti.push_back(make_shared<Professore>("Pluto", "Plutone"));
 	lista_utenti.push_back(make_shared<Professore>("Pippo", "Plutone"));
 
-	//init menu
+	//init menu con time(0) un long int e sommo secondi per cambiare data
 	lista_menu_primo.push_back(make_shared<MenuPrimo>(lista_utenti.at(0), MenuPrimo::get_prezzo(), time(0),
 			Menu::get_orario_from_int(0), MenuPrimo::get_primo_from_int(0),
 			MenuPrimo::get_dessert_from_int(0), MenuPrimo::get_caffe_from_int(0)));
@@ -124,8 +124,26 @@ void Gestore::nuovo_menu_primo(){
 	if (o == -1){
 		return;
 	}
-	Orario orario_scelto = Menu::get_orario_from_int(o);
-
+	// selezione primo
+	int p = scelta_primo();
+	if (p == -1){
+		return;
+	}
+	// selezione dessert
+	int d = scelta_dessert();
+	if (d == -1){
+		return;
+	}
+	// selezione caffe
+	int c = scelta_caffe();
+	if (c == -1){
+		return;
+	}
+	cout << "Menu primo creato " << endl;
+	menu_primo_ref menu_primo_scelto = make_shared<MenuPrimo>(utente_scelto, MenuPrimo::get_prezzo(), data_scelta,
+			Menu::get_orario_from_int(o), MenuPrimo::get_primo_from_int(p),
+			MenuPrimo::get_dessert_from_int(d), MenuPrimo::get_caffe_from_int(c));
+	lista_menu_primo.push_back(menu_primo_scelto);
 }
 
 void Gestore::nuovo_menu_secondo(){
@@ -135,6 +153,36 @@ void Gestore::nuovo_menu_secondo(){
 	if (utente_scelto == nullptr) {
 		return;
 	}
+	// selezione data
+	time_t data_scelta = scelta_data();
+	if (data_scelta == 0) {
+		return;
+	}
+	// selezione dell'orario
+	int o = scelta_orario();
+	if (o == -1){
+		return;
+	}
+	// selezione secondo
+	int s = scelta_secondo();
+	if (s == -1){
+		return;
+	}
+	// selezione dessert
+	int ct = scelta_contorno();
+	if (ct == -1){
+		return;
+	}
+	// selezione caffe
+	int c = scelta_caffe();
+	if (c == -1){
+		return;
+	}
+	cout << "Menu secondo creato " << endl;
+	menu_secondo_ref menu_secondo_scelto = make_shared<MenuSecondo>(utente_scelto, MenuSecondo::get_prezzo(), data_scelta,
+			Menu::get_orario_from_int(o), MenuSecondo::get_secondo_from_int(s),
+			MenuSecondo::get_contorno_from_int(ct), MenuSecondo::get_caffe_from_int(c));
+	lista_menu_secondo.push_back(menu_secondo_scelto);
 }
 
 void Gestore::nuovo_menu_completo(){
@@ -144,6 +192,46 @@ void Gestore::nuovo_menu_completo(){
 	if (utente_scelto == nullptr) {
 		return;
 	}
+	// selezione data
+	time_t data_scelta = scelta_data();
+	if (data_scelta == 0) {
+		return;
+	}
+	// selezione dell'orario
+	int o = scelta_orario();
+	if (o == -1){
+		return;
+	}
+	// selezione primo
+	int p = scelta_primo();
+	if (p == -1){
+		return;
+	}
+	// selezione secondo
+	int s = scelta_secondo();
+	if (s == -1){
+		return;
+	}
+	// selezione contorno
+	int ct = scelta_contorno();
+	if (ct == -1){
+		return;
+	}
+	// selezione dessert
+	int d = scelta_dessert();
+	if (d == -1){
+		return;
+	}
+	// selezione caffe
+	int c = scelta_caffe();
+	if (c == -1){
+		return;
+	}
+	cout << "Menu completo creato " << endl;
+	menu_completo_ref menu_completo_scelto = make_shared<MenuCompleto>(utente_scelto, MenuCompleto::get_prezzo(),
+			data_scelta, Menu::get_orario_from_int(o), MenuPrimo::get_primo_from_int(p), MenuSecondo::get_secondo_from_int(s),
+			MenuSecondo::get_contorno_from_int(ct), MenuPrimo::get_dessert_from_int(d), MenuPrimo::get_caffe_from_int(c));
+	lista_menu_completo.push_back(menu_completo_scelto);
 }
 
 utente_ref Gestore::scelta_utente(){
@@ -240,17 +328,115 @@ time_t Gestore::scelta_data(){	// return 0 per errore
 int Gestore::scelta_orario(){
 	string line;
 	int orario_scelto = -1;
-	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
-	cout << "Sei nella sezione di scelta dell'orario ('!' per terminare): " << endl;
-	cout << "Seleziona l'orario del tuo pasto. " << endl;
-	for (int index = 0; index < 2; index++){
+	cout << "Seleziona l'orario del tuo pasto: " << endl;
+	for (unsigned int index = 0; index < 2; index++){
 		cout << index << " - " << Menu::get_string_orario_from_enum( Menu::get_orario_from_int(index) ) << endl;
 	}
 	getline(cin, line);
 	if (line == "!" || line == "\0") {
 		return -1;
 	}
+	orario_scelto = stoi(line);
+	if (orario_scelto < 0 || orario_scelto > 1) {
+		stampa_errore();
+		return -1;
+	}
 	return orario_scelto;
+}
+
+int Gestore::scelta_primo(){
+	string line;
+	int primo_scelto = -1;
+	cout << "Seleziona il primo: " << endl;
+	for (unsigned int index = 0; index < 4; index++){
+		cout << index << " - " << MenuPrimo::get_string_primo_from_enum( MenuPrimo::get_primo_from_int(index) ) << endl;
+	}
+	getline(cin, line);
+	if (line == "!" || line == "\0") {
+		return -1;
+	}
+	primo_scelto = stoi(line);
+	if (primo_scelto < 0 || primo_scelto > 3) {
+		stampa_errore();
+		return -1;
+	}
+	return primo_scelto;
+}
+
+int Gestore::scelta_secondo(){
+	string line;
+	int secondo_scelto = -1;
+	cout << "Seleziona il secondo: " << endl;
+	for (unsigned int index = 0; index < 3; index++){
+		cout << index << " - " << MenuSecondo::get_string_secondo_from_enum( MenuSecondo::get_secondo_from_int(index) ) << endl;
+	}
+	getline(cin, line);
+	if (line == "!" || line == "\0") {
+		return -1;
+	}
+	secondo_scelto = stoi(line);
+	if (secondo_scelto < 0 || secondo_scelto > 2) {
+		stampa_errore();
+		return -1;
+	}
+	return secondo_scelto;
+}
+
+int Gestore::scelta_contorno(){
+	string line;
+	int contorno_scelto = -1;
+	cout << "Seleziona il contorno: " << endl;
+	for (unsigned int index = 0; index < 3; index++){
+		cout << index << " - " << MenuSecondo::get_string_contorno_from_enum( MenuSecondo::get_contorno_from_int(index) ) << endl;
+	}
+	getline(cin, line);
+	if (line == "!" || line == "\0") {
+		return -1;
+	}
+	contorno_scelto = stoi(line);
+	if (contorno_scelto < 0 || contorno_scelto > 2) {
+		stampa_errore();
+		return -1;
+	}
+	return contorno_scelto;
+}
+
+int Gestore::scelta_dessert(){
+	string line;
+	int dessert_scelto = -1;
+	cout << "Seleziona il dessert: " << endl;
+	for (unsigned int index = 0; index < 3; index++){
+		cout << index << " - " << MenuPrimo::get_string_dessert_from_enum( MenuPrimo::get_dessert_from_int(index) ) << endl;
+	}
+	getline(cin, line);
+	if (line == "!" || line == "\0") {
+		return -1;
+	}
+	dessert_scelto = stoi(line);
+	if (dessert_scelto < 0 || dessert_scelto > 2) {
+		stampa_errore();
+		return -1;
+	}
+	return dessert_scelto;
+}
+
+int Gestore::scelta_caffe(){
+	string line;
+	int caffe_scelto = -1;
+	cout << "Seleziona il caffe: " << endl;
+	for (unsigned int index = 0; index < 2; index++){
+		cout << index << " - " << MenuPrimo::get_string_caffe_from_enum( MenuPrimo::get_caffe_from_int(index) ) << endl;
+	}
+	getline(cin, line);
+	if (line == "!" || line == "\0") {
+		return -1;
+	}
+	caffe_scelto = stoi(line);
+	if (caffe_scelto < 0 || caffe_scelto > 1) {
+		stampa_errore();
+		return -1;
+	}
+	return caffe_scelto;
 }
 
 
