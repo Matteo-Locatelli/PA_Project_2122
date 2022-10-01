@@ -24,7 +24,7 @@ using namespace std;
 class Studente : public Utente
 {
 private:
-	static unsigned int  num_studenti;
+	static int num_studenti;
 
 	string codice_studente;
 

@@ -18,7 +18,7 @@
 
 using namespace std;
 
-unsigned int  Studente::num_studenti = 0;
+int Studente::num_studenti = 0;
 
 const string STUDENTE_PREFIX = "S";
 

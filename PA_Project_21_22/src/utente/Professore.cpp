@@ -18,7 +18,7 @@
 
 using namespace std;
 
-unsigned int Professore::num_professori = 0;
+int Professore::num_professori = 0;
 
 const string PROFESSORE_PREFIX = "T";
 

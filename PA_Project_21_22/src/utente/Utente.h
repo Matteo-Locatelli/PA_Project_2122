@@ -31,18 +31,18 @@ private:
 	string cognome;
 
 protected:
-	virtual int get_codice();
+	int get_codice();
 
 public:
 	Utente(string nome, string cognome);
 
-	virtual string get_nome();
+	string get_nome();
 
-	virtual string get_cognome();
+	string get_cognome();
 
-	virtual void set_nome(string const nome);
+	void set_nome(string const nome);
 
-	virtual void set_cognome(string cognome);
+	void set_cognome(string cognome);
 
 	virtual string get_string();
 

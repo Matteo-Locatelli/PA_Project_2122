@@ -317,7 +317,7 @@ time_t Gestore::scelta_data(){	// return 0 per errore
 	local_data_time->tm_year = year - 1900;
 	local_data_time->tm_mon = month - 1;
 	local_data_time->tm_mday = day;
-	local_data_time->tm_hour = 0;
+	local_data_time->tm_hour = 12;
 	local_data_time->tm_min = 0;
 	local_data_time->tm_sec = 0;
 	data = mktime(local_data_time);
