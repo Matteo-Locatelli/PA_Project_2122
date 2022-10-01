@@ -27,7 +27,7 @@ private:
 
 	void init();
 
-	menu_ref crea_menu();
+	// menu_ref crea_menu(); metodo epr creare un menu_ref e usare il secondo costruttore dei vari menu
 
 	vector <utente_ref> lista_utenti;
 

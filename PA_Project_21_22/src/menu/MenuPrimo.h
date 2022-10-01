@@ -34,7 +34,7 @@ private:
 	Primo primo;
 	Dessert dessert;
 	Caffe caffe;
-	static const int prezzo_menu_primo = 10;
+	static const int prezzo_menu_primo;
 
 public:
 	MenuPrimo(utente_ref u, int prezzo , time_t data, Orario o, Primo primo, Dessert dessert, Caffe caffe);
@@ -43,23 +43,23 @@ public:
 
 	static int get_prezzo();
 
-	virtual Primo get_primo();
+	Primo get_primo();
 
-	virtual void set_primo(Primo const p);
+	void set_primo(Primo const p);
 
-	virtual Dessert get_dessert();
+	Dessert get_dessert();
 
-	virtual void set_dessert(Dessert const d);
+	void set_dessert(Dessert const d);
 
 	virtual Caffe get_caffe();
 
 	virtual void set_caffe(Caffe const c);
 
-	static Primo get_primo_from_int(int p);
+	static Primo get_primo_from_int(int const p);
 
-	static Dessert get_dessert_from_int(int d);
+	static Dessert get_dessert_from_int(int const d);
 
-	static Caffe get_caffe_from_int(int c);
+	static Caffe get_caffe_from_int(int const c);
 
 	static string get_string_primo_from_enum(Primo const p);
 

@@ -105,6 +105,32 @@ void Gestore::nuovo_menu(){
 		}
 	}
 }
+/*
+menu_ref Gestore::crea_menu(){
+	// selezione dell'utente
+	utente_ref utente_scelto = scelta_utente();
+	if (utente_scelto == nullptr) {
+		return;
+	}
+	// selezione del menu
+	int p = scelta_menu();	-> metodo che mostra in console 3 opzioni e restituisce il prezzo data l'opzione scelta (p, s, c).
+	if(p==0) {
+		return;
+	}
+	// selezione data
+	time_t data_scelta = scelta_data();
+	if (data_scelta == 0) {
+		return;
+	}
+	// selezione dell'orario
+	int o = scelta_orario();
+	if (o == -1){
+		return;
+	}
+	menu_ref menu_creato = make_shared<Menu>(utente_scelto, prezzo, data_scelta, orario_scelto);
+	return menu_creato;
+}
+ */
 
 void Gestore::nuovo_menu_primo(){
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;

@@ -46,7 +46,7 @@ public:
 
 	virtual string get_string();
 
-	~MenuCompleto();
+	virtual ~MenuCompleto();
 };
 
 typedef shared_ptr<MenuCompleto> menu_completo_ref;

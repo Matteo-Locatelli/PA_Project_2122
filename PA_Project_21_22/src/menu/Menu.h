@@ -37,23 +37,23 @@ public:
 
 	Menu(const Menu &menu);
 
-	virtual utente_ref get_utente();
+	utente_ref get_utente();
 
-	virtual void set_utente(utente_ref const utente);
+	void set_utente(utente_ref const utente);
 
 	int get_prezzo();
 
-	virtual time_t get_data();
+	time_t get_data();
 
-	virtual void set_data(time_t const data);
+	void set_data(time_t const data);
 
-	virtual Orario get_ora();
+	Orario get_ora();
 
-	virtual void set_ora(Orario const o);
+	void set_ora(Orario const o);
 
 	static string get_string_orario_from_enum(Orario const o);
 
-	static Orario get_orario_from_int(int o);
+	static Orario get_orario_from_int(int const o);
 
 	virtual string get_string();
 

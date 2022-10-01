@@ -30,6 +30,8 @@ enum Caffe : int{
 	no = 0, si = 1
 };
 
+const int MenuSecondo::prezzo_menu_secondo = 10;
+
 MenuSecondo::MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe):
 		Menu(u, prezzo, data, o){
 	this->secondo = secondo;
@@ -71,7 +73,7 @@ void MenuSecondo::set_caffe(Caffe const c){
 	this->caffe = c;
 }
 
-Secondo MenuSecondo::get_secondo_from_int(int s){
+Secondo MenuSecondo::get_secondo_from_int(int const s){
 	if (s==0) {
 		return Secondo::pollo;
 	} else if (s==1) {
@@ -81,7 +83,7 @@ Secondo MenuSecondo::get_secondo_from_int(int s){
 	}
 }
 
-Contorno MenuSecondo::get_contorno_from_int(int c){
+Contorno MenuSecondo::get_contorno_from_int(int const c){
 	if (c==0) {
 		return Contorno::insalata;
 	} else if (c==1) {
@@ -91,7 +93,7 @@ Contorno MenuSecondo::get_contorno_from_int(int c){
 	}
 }
 
-Caffe MenuSecondo::get_caffe_from_int(int c){
+Caffe MenuSecondo::get_caffe_from_int(int const c){
 	if (c==0) {
 		return Caffe::no;
 	} else {

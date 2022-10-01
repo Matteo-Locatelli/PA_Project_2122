@@ -79,7 +79,7 @@ string Menu::get_string_orario_from_enum(Orario const o) {
 	}
 }
 
-Orario Menu::get_orario_from_int(int o){
+Orario Menu::get_orario_from_int(int const o){
 	if (o == 0) {
 		return Orario::pranzo;
 	} else {

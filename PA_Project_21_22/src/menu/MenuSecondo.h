@@ -34,7 +34,7 @@ private:
 	Secondo secondo;
 	Contorno contorno;
 	Caffe caffe;
-	static const int prezzo_menu_secondo = 10;
+	static const int prezzo_menu_secondo;
 
 public:
 	MenuSecondo(utente_ref u, int prezzo , time_t data, Orario o, Secondo secondo, Contorno contorno, Caffe caffe);
@@ -43,27 +43,27 @@ public:
 
 	static int get_prezzo();
 
-	virtual Secondo get_secondo();
+	Secondo get_secondo();
 
-	virtual void set_secondo(Secondo const s);
+	void set_secondo(Secondo const s);
 
-	virtual Contorno get_contorno();
+	Contorno get_contorno();
 
-	virtual void set_contorno(Contorno const c);
+	void set_contorno(Contorno const c);
 
 	virtual Caffe get_caffe();
 
 	virtual void set_caffe(Caffe const c);
 
-	static Secondo get_secondo_from_int(int s);
+	static Secondo get_secondo_from_int(int const s);
 
-	static Contorno get_contorno_from_int(int c);
+	static Contorno get_contorno_from_int(int const c);
 
-	static Caffe get_caffe_from_int(int c);
+	static Caffe get_caffe_from_int(int const c);
 
 	static string get_string_secondo_from_enum(Secondo const c);
 
-	static string get_string_contorno_from_enum(Contorno const n);
+	static string get_string_contorno_from_enum(Contorno const c);
 
 	static string get_string_caffe_from_enum(Caffe const c);
 

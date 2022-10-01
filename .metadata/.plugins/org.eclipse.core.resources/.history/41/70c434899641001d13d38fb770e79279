@@ -1,0 +1,109 @@
+/*
+ * Gestore.h
+ *
+ *  Created on: 17 ago 2022
+ *      Author: matte
+ */
+
+#ifndef GESTORE_GESTORE_H_
+#define GESTORE_GESTORE_H_
+
+#include <vector>
+#include <string>
+#include <memory>
+
+#include "../menu/Menu.h"
+#include "../menu/MenuCompleto.h"
+#include "../menu/MenuPrimo.h"
+#include "../menu/MenuSecondo.h"
+
+#include "../utente/Utente.h"
+#include "../utente/Studente.h"
+#include "../utente/Professore.h"
+
+class Gestore {
+
+private:
+
+	void init();
+
+	menu_ref crea_menu();
+
+	vector <utente_ref> lista_utenti;
+
+	/* SE 2 LISTE
+	vector <studente_ref> lista_studenti;
+
+	vector <professore_ref> lista_professori;
+	*/
+
+	vector <menu_primo_ref> lista_menu_primo;
+
+	vector <menu_secondo_ref> lista_menu_secondo;
+
+	vector <menu_completo_ref> lista_menu_completo;
+
+public:
+
+	Gestore();
+
+	void nuovo_menu();
+
+	void nuovo_menu_primo();
+
+	void nuovo_menu_secondo();
+
+	void nuovo_menu_completo();
+
+	utente_ref scelta_utente();
+
+	time_t scelta_data();
+
+	int scelta_orario();	// scelte con return int e poi converto durante la creazione del menu
+
+	int scelta_primo();
+
+	int scelta_secondo();
+
+	int scelta_contorno();
+
+	int scelta_dessert();
+
+	int scelta_caffe();
+
+	utente_ref registra_nuovo_utente();
+
+	/* SE 2 LISTE
+	studente_ref registra_nuovo_studente();
+
+	professore_ref registra_nuovo_professore();
+	*/
+
+	void stampa_lista_menu();
+
+	void stampa_lista_menu_primo();
+
+	void stampa_lista_menu_secondo();
+
+	void stampa_lista_menu_completo();
+
+	void stampa_opzioni_menu();
+
+	void stampa_opzioni_menu_primo();
+
+	void stampa_opzioni_menu_secondo();
+
+	void stampa_opzioni_menu_completo();
+
+	void stampa_utenti();
+
+	/* SE 2 LISTE
+	void stampa_studenti();
+
+	void stampa_professori();
+	*/
+
+	~Gestore();
+};
+
+#endif /* GESTORE_GESTORE_H_ */
