@@ -16,13 +16,12 @@
 #include <vector>
 #include <list>
 
-#include "../utente/Utente.h"
-#include "../utente/Studente.h"
-#include "../utente/Professore.h"
-
 #include "Menu.h"
 #include "MenuPrimo.h"
 #include "MenuSecondo.h"
+#include "../utente/Utente.h"
+#include "../utente/Studente.h"
+#include "../utente/Professore.h"
 
 using namespace std;
 

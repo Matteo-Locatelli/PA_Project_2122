@@ -5,12 +5,12 @@
  *      Author: matte
  */
 
-#include "Gestore.h"
-
 #include <iostream>
 #include <vector>
 #include <string>
 #include <memory>
+
+#include "Gestore.h"
 
 #include "../menu/Menu.h"
 #include "../menu/MenuCompleto.h"
@@ -582,6 +582,9 @@ void Gestore::stampa_lista_menu_completo(){
 
 void Gestore::stampa_opzioni_menu(){
 	stampa_scelte_menu();
+	stampa_opzioni_menu_primo();
+	stampa_opzioni_menu_secondo();
+	stampa_opzioni_menu_completo();
 }
 
 void Gestore::stampa_opzioni_menu_primo(){

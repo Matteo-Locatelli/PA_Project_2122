@@ -21,8 +21,8 @@
 
 using namespace std;
 
-class Studente : public Utente
-{
+class Studente : public Utente {
+
 private:
 	static int num_studenti;
 

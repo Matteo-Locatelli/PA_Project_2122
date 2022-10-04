@@ -19,8 +19,8 @@
 
 using namespace std;
 
-class Utente
-{
+class Utente {
+
 private:
 	static int  numUtenti;
 
@@ -51,6 +51,5 @@ public:
 };
 
 typedef shared_ptr<Utente> utente_ref;
-
 
 #endif /* UTENTE_UTENTE_H_ */

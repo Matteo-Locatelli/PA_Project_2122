@@ -137,13 +137,10 @@ string MenuSecondo::get_string_caffe_from_enum(Caffe const c){
 
 string MenuSecondo::get_string(){
 	stringstream streamer;
-
 	streamer << Menu::get_string() << endl;
-
 	streamer << "Secondo: " << MenuSecondo::get_string_secondo_from_enum(this->secondo) << endl;
 	streamer << "Contorno: " << MenuSecondo::get_string_contorno_from_enum(this->contorno) << endl;
 	streamer << "Caffe: " << MenuSecondo::get_string_caffe_from_enum(this->caffe) << endl;
-
 	return streamer.str();
 }
 

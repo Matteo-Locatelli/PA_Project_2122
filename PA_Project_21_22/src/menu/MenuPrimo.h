@@ -16,11 +16,10 @@
 #include <vector>
 #include <list>
 
+#include "Menu.h"
 #include "../utente/Utente.h"
 #include "../utente/Studente.h"
 #include "../utente/Professore.h"
-
-#include "Menu.h"
 
 using namespace std;
 
@@ -28,7 +27,7 @@ enum Primo : int;
 enum Dessert : int;
 enum Caffe : int;
 
-class MenuPrimo : public virtual Menu{
+class MenuPrimo : public virtual Menu {
 
 private:
 	Primo primo;

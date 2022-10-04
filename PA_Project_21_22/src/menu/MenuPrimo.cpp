@@ -13,6 +13,7 @@
 #include <memory>
 #include <vector>
 #include <list>
+#include <assert.h>
 
 #include "MenuPrimo.h"
 
@@ -141,13 +142,10 @@ string MenuPrimo::get_string_caffe_from_enum(Caffe const c){
 
 string MenuPrimo::get_string(){
 	stringstream streamer;
-
 	streamer << Menu::get_string() << endl;
-
 	streamer << "Primo: " << MenuPrimo::get_string_primo_from_enum(this->primo) << endl;
 	streamer << "Dessert: " << MenuPrimo::get_string_dessert_from_enum(this->dessert) << endl;
 	streamer << "Caffe: " << MenuPrimo::get_string_caffe_from_enum(this->caffe) << endl;
-
 	return streamer.str();
 }
 

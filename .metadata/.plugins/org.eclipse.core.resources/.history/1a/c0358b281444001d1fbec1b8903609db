@@ -1,0 +1,71 @@
+/*
+ * MenuCompleto.cpp
+ *
+ *  Created on: 17 ago 2022
+ *      Author: matte
+ */
+
+#include <iostream>
+#include <cstdlib>
+#include <string>
+#include <sstream>
+#include <ctime>
+#include <memory>
+#include <vector>
+#include <list>
+
+#include "MenuCompleto.h"
+
+using namespace std;
+
+const int MenuCompleto::prezzo_menu_completo = 15;
+
+MenuCompleto::MenuCompleto(utente_ref u, int prezzo , time_t data, Orario o,
+		Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe) :
+										Menu::Menu(u, prezzo, data, o),
+										MenuPrimo::MenuPrimo(u, prezzo, data, o, primo, dessert, caffe),
+										MenuSecondo::MenuSecondo(u, prezzo, data, o, secondo, contorno, caffe) {
+}
+
+MenuCompleto::MenuCompleto(menu_ref menu,
+		Primo primo, Secondo secondo, Contorno contorno, Dessert dessert, Caffe caffe) :
+										Menu::Menu(*menu),
+										MenuPrimo::MenuPrimo(menu, primo, dessert, caffe),
+										MenuSecondo::MenuSecondo(menu, secondo, contorno, caffe){
+}
+
+int MenuCompleto::get_prezzo(){
+	return prezzo_menu_completo;
+}
+
+Caffe MenuCompleto::get_caffe(){
+	return this->MenuPrimo::get_caffe();
+}
+
+void MenuCompleto::set_caffe(Caffe const c){
+	this->MenuPrimo::set_caffe(c);
+	this->MenuSecondo::set_caffe(c);
+}
+
+string MenuCompleto::get_string(){
+	stringstream streamer;
+
+	streamer << Menu::get_string() << endl;
+
+	streamer << "Primo: " << MenuPrimo::get_string_primo_from_enum(this->get_primo()) << endl;
+	streamer << "Secondo: " << MenuSecondo::get_string_secondo_from_enum(this->get_secondo()) << endl;
+	streamer << "Contorno: " << MenuSecondo::get_string_contorno_from_enum(this->get_contorno()) << endl;
+	streamer << "Dessert: " << MenuPrimo::get_string_dessert_from_enum(this->get_dessert()) << endl;
+	streamer << "Caffe: " << MenuPrimo::get_string_caffe_from_enum(this->MenuPrimo::get_caffe()) << endl;
+
+	return streamer.str();
+}
+
+int MenuCompleto::compare_to(comparable_ref c){
+	unique_ptr<MenuCompleto> other(dynamic_cast<MenuCompleto*>(c.get()));
+	return this->get_data() - other->get_data();
+}
+
+MenuCompleto::~MenuCompleto(){
+	cout << "Elimino menu completo" <<endl;
+}
