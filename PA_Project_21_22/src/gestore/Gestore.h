@@ -27,8 +27,6 @@ private:
 
 	void init();
 
-	// menu_ref crea_menu(); metodo epr creare un menu_ref e usare il secondo costruttore dei vari menu
-
 	vector <utente_ref> lista_utenti;
 
 	/* SE 2 LISTE
@@ -49,11 +47,15 @@ public:
 
 	void nuovo_menu();
 
+	menu_ref crea_menu();
+
 	void nuovo_menu_primo();
 
 	void nuovo_menu_secondo();
 
 	void nuovo_menu_completo();
+
+	int scelta_menu();
 
 	utente_ref scelta_utente();
 
