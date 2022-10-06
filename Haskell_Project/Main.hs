@@ -1,4 +1,4 @@
--- Algoritmi di ordinamento in haskell
+-- Implementazione algoritmi di ordinamento basati su confronto 
 
 import Data.List (minimum, delete, permutations)
 import Control.Exception
@@ -60,7 +60,7 @@ ssort [] = []
 ssort xs = let { x = minimum xs } 
            in  x : ssort (delete x xs)
 
--- StupidSort/PermutationSort
+-- PermutationSort
 sorted :: Ord a => [a] -> Bool
 sorted (x:y:xs) = x <= y && sorted (y:xs)
 sorted _        = True
@@ -69,12 +69,11 @@ psort :: Ord a => [a] -> [a]
 psort = head . filter sorted . permutations
 
 -- main 
-
 main = do
     putStrLn $ "---------------------------------------"
     putStrLn "Esempio d'uso delle liste"
     putStrLn $ "---------------------------------------"
-    let list = [9,3,7,42,73,-12,45,8,0,-99,12,89,4,78]
+    let list = [9,3,7,42,73,-12,45,8,0]
     putStrLn $ "list = " ++ show (list)
     putStrLn $ "---------------------------------------"
     putStrLn $ "Con quale algoritmo vuoi ordinare la lista?"
