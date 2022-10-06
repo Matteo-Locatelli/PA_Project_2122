@@ -46,6 +46,11 @@ public:
 
 	virtual string get_string();
 
+	virtual bool operator > (Utente other)
+	{
+		return this->get_cognome() > other.get_cognome();
+	}
+
 	virtual ~Utente();
 
 };

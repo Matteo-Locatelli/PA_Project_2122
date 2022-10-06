@@ -18,10 +18,11 @@
 #include <memory>
 
 #include "Utente.h"
+#include "../gestore/Comparable.h"
 
 using namespace std;
 
-class Professore : public Utente {
+class Professore : public Utente, public Comparable {
 
 private:
 	static int num_professori;
@@ -34,6 +35,8 @@ public:
 	string get_codice_professore();
 
 	virtual string get_string();
+
+	int compare_to(comparable_ref c);
 
 	virtual ~Professore();
 };

@@ -38,6 +38,11 @@ string Professore::get_string(){
 	return streamer.str();
 }
 
+int Professore::compare_to(comparable_ref c){
+	unique_ptr<Professore> other(dynamic_cast<Professore*>(c.get()));
+	return this->get_cognome().compare(other->get_cognome());
+}
+
 Professore::~Professore(){
 	cout << "Elimino professore " << codice_professore << " " << Utente::get_string();
 }

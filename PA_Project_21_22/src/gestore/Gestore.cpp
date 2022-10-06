@@ -630,6 +630,7 @@ void Gestore::stampa_opzioni_menu_completo(){
 
 void Gestore::stampa_utenti(){
 	cout << "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << endl;
+	ordina_lista(lista_utenti);
 	cout << "Lista utenti: " << endl;
 	for(auto& el: lista_utenti){
 		stampa_utente(el);

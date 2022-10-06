@@ -7869,3 +7869,242 @@ In file included from ..\src\gestore\Stampe.h:19:0,
        ^~~~~~~~~~~~
 g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
 Info: Nothing to build for PA_Project_21_22
+00:00:07 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:13:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:19:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+In file included from ..\src\gestore/Gestore.h:16:0,
+                 from ..\src\PA_Project_21_22.cpp:15:
+..\src\gestore/../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+In file included from ..\src\menu\MenuCompleto.cpp:17:0:
+..\src\menu\MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Utente.o" "..\\src\\utente\\Utente.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+src\utente\Professore.o:Professore.cpp:(.rdata$_ZTV10Professore[__ZTV10Professore]+0x18): undefined reference to `Professore::compare_to(std::shared_ptr<Comparable>)'
+src\utente\Professore.o:Professore.cpp:(.rdata$_ZTV10Professore[__ZTV10Professore]+0x24): undefined reference to `non-virtual thunk to Professore::compare_to(std::shared_ptr<Comparable>)'
+src\utente\Studente.o:Studente.cpp:(.rdata$_ZTV8Studente[__ZTV8Studente]+0x18): undefined reference to `Studente::compare_to(std::shared_ptr<Comparable>)'
+src\utente\Studente.o:Studente.cpp:(.rdata$_ZTV8Studente[__ZTV8Studente]+0x24): undefined reference to `non-virtual thunk to Studente::compare_to(std::shared_ptr<Comparable>)'
+collect2.exe: error: ld returned 1 exit status
+00:02:19 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+00:03:10 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:13:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22
+00:07:01 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+..\src\utente\Studente.cpp: In member function 'virtual int Studente::compare_to(comparable_ref)':
+..\src\utente\Studente.cpp:43:37: error: no match for 'operator-' (operand types are 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' and 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}')
+  return this->get_codice_studente() - other->get_codice_studente();
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:40,
+                 from ..\src\utente\Studente.cpp:8:
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:333:5: note: candidate: template<class _Iterator> decltype ((__x.base() - __y.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator-(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:333:5: note:   template argument deduction/substitution failed:
+..\src\utente\Studente.cpp:43:66: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'const std::reverse_iterator<_Iterator>'
+  return this->get_codice_studente() - other->get_codice_studente();
+                                                                  ^
+In file included from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:40,
+                 from ..\src\utente\Studente.cpp:8:
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:387:5: note: candidate: template<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator-(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:387:5: note:   template argument deduction/substitution failed:
+..\src\utente\Studente.cpp:43:66: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'const std::reverse_iterator<_Iterator>'
+  return this->get_codice_studente() - other->get_codice_studente();
+                                                                  ^
+In file included from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:40,
+                 from ..\src\utente\Studente.cpp:8:
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:1186:5: note: candidate: template<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator-(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:1186:5: note:   template argument deduction/substitution failed:
+..\src\utente\Studente.cpp:43:66: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'const std::move_iterator<_IteratorL>'
+  return this->get_codice_studente() - other->get_codice_studente();
+                                                                  ^
+In file included from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:40,
+                 from ..\src\utente\Studente.cpp:8:
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:1193:5: note: candidate: template<class _Iterator> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator-(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:1193:5: note:   template argument deduction/substitution failed:
+..\src\utente\Studente.cpp:43:66: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'const std::move_iterator<_IteratorL>'
+  return this->get_codice_studente() - other->get_codice_studente();
+                                                                  ^
+In file included from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:65:0,
+                 from ..\src\utente\Studente.cpp:10:
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h:208:3: note: candidate: std::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)
+   operator-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+   ^~~~~~~~
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h:208:3: note:   no known conversion for argument 1 from 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' to 'const std::_Bit_iterator_base&'
+In file included from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:40,
+                 from ..\src\utente\Studente.cpp:8:
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:959:5: note: candidate: template<class _Iterator, class _Container> typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:959:5: note:   template argument deduction/substitution failed:
+..\src\utente\Studente.cpp:43:66: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>'
+  return this->get_codice_studente() - other->get_codice_studente();
+                                                                  ^
+In file included from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:40,
+                 from ..\src\utente\Studente.cpp:8:
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:947:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> decltype ((__lhs.base() - __rhs.base())) __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator-(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+c:\users\matte\eclipse_uni\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:947:5: note:   template argument deduction/substitution failed:
+..\src\utente\Studente.cpp:43:66: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+  return this->get_codice_studente() - other->get_codice_studente();
+                                                                  ^
+00:10:44 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22
+00:17:38 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+In file included from ..\src\gestore/Gestore.h:16:0,
+                 from ..\src\PA_Project_21_22.cpp:15:
+..\src\gestore/../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:19:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:13:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+In file included from ..\src\menu\MenuCompleto.cpp:17:0:
+..\src\menu\MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22
+Info: Nothing to build for PA_Project_21_22
+Info: Nothing to build for PA_Project_21_22
+Info: Nothing to build for PA_Project_21_22
+00:20:50 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:13:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Utente.o" "..\\src\\utente\\Utente.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_21_22.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:21:30 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22
+00:23:53 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Utente.o" "..\\src\\utente\\Utente.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22
+00:26:00 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:13:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Studente.o" "..\\src\\utente\\Studente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Professore.o" "..\\src\\utente\\Professore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+In file included from ..\src\gestore/Gestore.h:16:0,
+                 from ..\src\PA_Project_21_22.cpp:15:
+..\src\gestore/../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+In file included from ..\src\menu\MenuCompleto.cpp:17:0:
+..\src\menu\MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utente\\Utente.o" "..\\src\\utente\\Utente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:19:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22
+00:26:39 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:13:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+c:/users/matte/eclipse_uni/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file PA_Project_21_22.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:27:00 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
