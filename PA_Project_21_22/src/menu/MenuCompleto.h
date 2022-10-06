@@ -22,10 +22,11 @@
 #include "../utente/Utente.h"
 #include "../utente/Studente.h"
 #include "../utente/Professore.h"
+#include "../gestore/Comparable.h"
 
 using namespace std;
 
-class MenuCompleto : public MenuPrimo, public MenuSecondo {
+class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
 
 private:
 	static const int prezzo_menu_completo;
@@ -44,6 +45,8 @@ public:
 	virtual void set_caffe(Caffe const c);
 
 	virtual string get_string();
+
+	int compare_to(comparable_ref c);
 
 	virtual ~MenuCompleto();
 };

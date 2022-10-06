@@ -1,0 +1,26 @@
+/*
+ * Comparable.h
+ *
+ *  Created on: 6 ott 2022
+ *      Author: matte
+ */
+
+#ifndef GESTORE_COMPARABLE_H_
+#define GESTORE_COMPARABLE_H_
+
+#include <memory>
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+class Comparable {
+public:
+	Comparable();
+    virtual int compare_to(shared_ptr<Comparable> c);
+    virtual ~Comparable();
+};
+
+typedef shared_ptr<Comparable> comparable_ref;
+
+#endif /* GESTORE_COMPARABLE_H_ */

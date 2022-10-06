@@ -144,6 +144,11 @@ string MenuSecondo::get_string(){
 	return streamer.str();
 }
 
+int MenuSecondo::compare_to(comparable_ref c){
+	unique_ptr<MenuSecondo> other(dynamic_cast<MenuSecondo*>(c.get()));
+	return this->get_data() - other->get_data();
+}
+
 MenuSecondo::~MenuSecondo(){
 	cout << "Elimino menu secondo" << endl;
 }

@@ -30,10 +30,9 @@ private:
 	vector <utente_ref> lista_utenti;
 
 	/* SE 2 LISTE
-	vector <studente_ref> lista_studenti;
-
-	vector <professore_ref> lista_professori;
-	*/
+	 * vector <studente_ref> lista_studenti;
+   	 * vector <professore_ref> lista_professori;
+	 */
 
 	vector <menu_primo_ref> lista_menu_primo;
 
@@ -76,10 +75,10 @@ public:
 	utente_ref registra_nuovo_utente();
 
 	/* SE 2 LISTE
-	studente_ref registra_nuovo_studente();
-
-	professore_ref registra_nuovo_professore();
-	*/
+	 * studente_ref registra_nuovo_studente();
+	 *
+	 * professore_ref registra_nuovo_professore();
+	 */
 
 	void stampa_lista_menu();
 
@@ -100,10 +99,10 @@ public:
 	void stampa_utenti();
 
 	/* SE 2 LISTE
-	void stampa_studenti();
-
-	void stampa_professori();
-	*/
+	 *void stampa_studenti();
+	 *
+	 *void stampa_professori();
+	 */
 
 	~Gestore();
 

@@ -57,6 +57,11 @@ public:
 
 	virtual string get_string();
 
+	virtual bool operator > (Menu other)
+	{
+		return this->data > other.get_data();
+	}
+
 	virtual ~Menu();
 };
 

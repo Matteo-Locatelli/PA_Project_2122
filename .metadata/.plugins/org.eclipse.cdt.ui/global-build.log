@@ -7734,3 +7734,138 @@ Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
 g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
 Info: Nothing to build for PA_Project_21_22
+23:30:31 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+23:48:12 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Comparable.o" "..\\src\\gestore\\Comparable.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+In file included from ..\src\menu\MenuCompleto.cpp:17:0:
+..\src\menu\MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+In file included from ..\src\gestore/Gestore.h:16:0,
+                 from ..\src\PA_Project_21_22.cpp:15:
+..\src\gestore/../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:19:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\Menu.o" "..\\src\\menu\\Menu.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:13:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+23:48:54 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:13:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+In file included from ..\src\menu\MenuCompleto.cpp:17:0:
+..\src\menu\MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+In file included from ..\src\gestore/Gestore.h:16:0,
+                 from ..\src\PA_Project_21_22.cpp:15:
+..\src\gestore/../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:19:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+23:50:24 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+In file included from ..\src\menu\MenuCompleto.cpp:17:0:
+..\src\menu\MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+In file included from ..\src\gestore/Gestore.h:16:0,
+                 from ..\src\PA_Project_21_22.cpp:15:
+..\src\gestore/../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:19:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:13:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+23:52:41 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuSecondo.o" "..\\src\\menu\\MenuSecondo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:13:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuCompleto.o" "..\\src\\menu\\MenuCompleto.cpp" 
+In file included from ..\src\menu\MenuCompleto.cpp:17:0:
+..\src\menu\MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:19:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\menu\\MenuPrimo.o" "..\\src\\menu\\MenuPrimo.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PA_Project_21_22.o" "..\\src\\PA_Project_21_22.cpp" 
+In file included from ..\src\gestore/Gestore.h:16:0,
+                 from ..\src\PA_Project_21_22.cpp:15:
+..\src\gestore/../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+23:55:19 **** Incremental Build of configuration Debug for project PA_Project_21_22 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Gestore.o" "..\\src\\gestore\\Gestore.cpp" 
+In file included from ..\src\gestore\Gestore.h:16:0,
+                 from ..\src\gestore\Gestore.cpp:13:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\gestore\\Stampe.o" "..\\src\\gestore\\Stampe.cpp" 
+In file included from ..\src\gestore\Stampe.h:19:0,
+                 from ..\src\gestore\Stampe.cpp:14:
+..\src\gestore\../menu/MenuCompleto.h:29:7: warning: direct base 'Comparable' inaccessible in 'MenuCompleto' due to ambiguity
+ class MenuCompleto : public MenuPrimo, public MenuSecondo, public Comparable {
+       ^~~~~~~~~~~~
+g++ -o PA_Project_21_22.exe "src\\PA_Project_21_22.o" "src\\gestore\\Comparable.o" "src\\gestore\\Gestore.o" "src\\gestore\\Stampe.o" "src\\menu\\Menu.o" "src\\menu\\MenuCompleto.o" "src\\menu\\MenuPrimo.o" "src\\menu\\MenuSecondo.o" "src\\utente\\Professore.o" "src\\utente\\Studente.o" "src\\utente\\Utente.o" 
+Info: Nothing to build for PA_Project_21_22

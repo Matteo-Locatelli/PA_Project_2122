@@ -58,6 +58,11 @@ string MenuCompleto::get_string(){
 	return streamer.str();
 }
 
+int MenuCompleto::compare_to(comparable_ref c){
+	unique_ptr<MenuCompleto> other(dynamic_cast<MenuCompleto*>(c.get()));
+	return this->get_data() - other->get_data();
+}
+
 MenuCompleto::~MenuCompleto(){
 	cout << "Elimino menu completo" <<endl;
 }
