@@ -69,53 +69,41 @@ psort :: Ord a => [a] -> [a]
 psort = head . filter sorted . permutations
 
 -- main 
-main :: IO ()
+
 main = do
+    putStrLn $ "---------------------------------------"
     putStrLn "Esempio d'uso delle liste"
-    let list1 = [1, 2, 3, 4, -6]
-    let list2 = [11, 25, 3, 49, 12]
-    let list3 = [9, 3, 6, 0, 8]
-    let list4 = [26, 3, 15, 2, 11]
-    let list5 = [-3, 5, 0, 1, 2]
-    let list6 = [7, 9, 2, 5, -4]
-
     putStrLn $ "---------------------------------------"
-    putStrLn $ "list1 = " ++ show (list1)
-    putStrLn $ "list2 = " ++ show (list2)
-    putStrLn $ "list3 = " ++ show (list3)
-    putStrLn $ "list4 = " ++ show (list4)
-    putStrLn $ "list5 = " ++ show (list5)
-    putStrLn $ "list6 = " ++ show (list6)
+    let list = [9,3,7,42,73,-12,45,8,0,-99,12,89,4,78]
+    putStrLn $ "list = " ++ show (list)
     putStrLn $ "---------------------------------------"
-
-    sq <- getCurrentTime
-    putStrLn $ "list1 qs = " ++ show (qsort list1)
-    eq <- getCurrentTime
-    print (diffUTCTime eq sq)
-
-    sm <- getCurrentTime
-    putStrLn $ "list2 ms = " ++ show (msort list2)
-    em <- getCurrentTime
-    print (diffUTCTime em sm)
-
-    sb <- getCurrentTime
-    putStrLn $ "list3 bs = " ++ show (bsort list3)
-    eb <- getCurrentTime
-    print (diffUTCTime eb sb)
-    
-    si <- getCurrentTime
-    putStrLn $ "list4 is = " ++ show (isort list4)
-    ei <- getCurrentTime
-    print (diffUTCTime ei si)
-    
-    ss <- getCurrentTime
-    putStrLn $ "list5 ss = " ++ show (ssort list5)
-    es <- getCurrentTime
-    print (diffUTCTime es ss)
-    
-    sp <- getCurrentTime
-    putStrLn $ "list6 ps = " ++ show (psort list6)
-    ep <- getCurrentTime
-    print (diffUTCTime ep sp)
-
+    putStrLn $ "Con quale algoritmo vuoi ordinare la lista?"
+    putStrLn $ "- QS -> QuickSort"
+    putStrLn $ "- MS -> MergeSort"
+    putStrLn $ "- BS -> BubbleSort"
+    putStrLn $ "- IS -> InsertSort"
+    putStrLn $ "- SS -> SelectionSort"
+    putStrLn $ "- PS -> PermutationSort"
     putStrLn $ "---------------------------------------"
+    algorithm <-getLine
+    putStrLn $ "---------------------------------------"
+    ct1 <- getCurrentTime
+    if algorithm == "QS" 
+      then putStrLn $ "Ordered list with QuickSortSort = " ++ show (qsort list)
+    else if algorithm == "MS" 
+      then putStrLn $ "Ordered list with MergeSort = " ++ show (msort list)
+    else if algorithm == "BS" 
+      then putStrLn $ "Ordered list with BubbleSort = " ++ show (bsort list) 
+    else if algorithm == "IS" 
+      then putStrLn $ "Ordered list with InsertionSort = " ++ show (isort list)
+    else if algorithm == "SS" 
+      then putStrLn $ "Ordered list with SelectionSort = " ++ show (ssort list)
+    else if algorithm == "PS" 
+      then putStrLn $ "Ordered list with PermutationSort = " ++ show (psort list)
+    else 
+      putStrLn $ "Input errato"
+    ct2 <- getCurrentTime
+    putStrLn $ "---------------------------------------"
+    putStrLn $ "Sorting done in " ++ show (diffUTCTime ct1 ct2)
+    putStrLn $ "---------------------------------------"
+    
