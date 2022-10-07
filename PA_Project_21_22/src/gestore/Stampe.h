@@ -23,23 +23,6 @@
 
 using namespace std;
 
-template <typename T>
-void ordina_lista(vector<T>& lista_to_order){
-	bubbleSortRic(lista_to_order, lista_to_order.size());
-}
-
-template<typename T>
-void bubbleSortRic(vector<T>& lista, int n){
-	if (n <= 1)
-		return;
-	for (int i=0; i < n-1; i++){
-		if (*lista.at(i) > *lista.at(i+1)){
-			swap(lista.at(i), lista.at(i+1));
-		}
-	}
-	bubbleSortRic(lista, n-1);
-}
-
 void stampa_menu(menu_ref menu);
 
 void stampa_utente(utente_ref utente);

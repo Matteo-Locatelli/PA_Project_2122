@@ -46,7 +46,7 @@ public:
 
 	virtual string get_string();
 
-	int compare_to(comparable_ref c);
+	virtual int compare_to(comparable_ref c);
 
 	virtual ~MenuCompleto();
 };

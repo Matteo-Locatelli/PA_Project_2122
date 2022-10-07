@@ -18,6 +18,7 @@
 #include "../menu/MenuSecondo.h"
 
 #include "Stampe.h"
+#include "Sorting.h"
 
 using namespace std;
 
