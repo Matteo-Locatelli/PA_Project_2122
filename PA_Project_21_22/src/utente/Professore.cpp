@@ -20,7 +20,7 @@ using namespace std;
 
 int Professore::num_professori = 0;
 
-const string PROFESSORE_PREFIX = "T";
+const string PROFESSORE_PREFIX = "P";
 
 Professore::Professore(string nome, string cognome) : Utente(nome, cognome){
 	num_professori++;
